@@ -3,10 +3,10 @@
  > As you complete each section you **must** remove the prompt text. Every *turnin* of this project includes points for formatting of this README so keep it clean and keep it up to date. 
  > Prompt text is any lines beginning with "\>"
  > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
-# \<Project title\>
+# Murder Mystery
  > Your author list below should include links to all members GitHub (remove existing author).
  
- > Authors: \<[Rian McCreery](https://github.com/hmccr001)\>
+ > Authors: \[Ashita Srinivasmurthy](https://github.com/ashita-816), [Rian McCreery](https://github.com/hmccr001), [Aishani Anand](https://github.com/aishanianandd)\
 
  > You will be forming a group of **FOUR** students and working on an interesting project. The project has 4 phases, each one with specific requirements. A list of proposed project ideas that have been successful in previous quarters is listed in the project specifications document on Canvas. You can select an idea from the list and start thinking about the features you will implement. If you want to propose your own original idea, you will have to contact your instructor to discuss the project and obtain written permission before you submit your project proposal (Phase 1). The project work should be divided almost equally among team members. You can of course help each other, but it needs to be clear who will be responsible for which features. Additionally, you are expected to follow Scrum patterns, specifically the use of a Scrum (Project) board, Sprints, and Scrum meetings.
 
@@ -17,17 +17,29 @@
  > * **Each member of the group must actively participate in the Github Project board, writing unit tests, and reviewing commited code.**
 > * All project phases are to be submitted to this GitHub repository. You should modify this README file to reflect the different phases of the project. In addition, you should regularly hold sprint meetings with your group. You will need to hold two to three scrum/check-in meetings with your lab TA/reader at different times in addition to the final demo.
 
-## Project Description
- > For our project, we will be constructing a simple, text-based role-playing game, which will be implemented using C++. Our role playing game will have a murder mystery theme, where the player will take on the role of a detective. The player will be initially provided with a description of the murder, their surroundings, and the people in the area that they are in. Then they will be provided with options such as "investigate", "talk", "switch locations", "analyze", etc. The output of our program will depend on which options they choose As the player advances through the game, they will be faced with a series of questions, but will either provide clues and more options, or will lead to a dead end. They will encounter multiple suspects and potential clues that could lead them to new people or locations. After a certain amount of time has passed (or a certain number of choices they have made), the game will ask they player who they think committed the murder. Based on the information the player has gathered, they will make their selection and our program will either output that they solved the mystery, or they did not.
- > Your project description should summarize the project you are proposing. Be sure to include:
- > * Why is it important or interesting to you?
- > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- > * What will be the input/output of your project?
- > * What are the features that the project provides?
- > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
- > 
- > You also need to set up an empty project board using GitHub projects (board view with columns for a scrum board). Make sure you add the board under your project repository. You should also add a `Product Backlog` and an `In testing` column. Please also rename the `TODO` column to `Sprint Backlog` and the `In Progress` column to `In Development`. All columns should be in the right order.
+> ## Project Description
+ > Our text-based role playing game will have a murder mystery theme, where the player will take on the role of a detective. 
+
+> 1. Why is it important or interesting to you?
+ >  * It’s fun to build and easy to demo since text-based means we can focus more on logic and systems instead of graphics. It also mixes storytelling with problem-solving where we can prioritize creativity in writing a compelling narrative, while also improving our software developing skills and gaining more experience.
+> 2. What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
+ > * Language: C++
+ > * Compile/Run: CMake/Make, g++/clang++
+ > * Unit Testing: GoogleTest
+ > * Debugging: Valgrind 
+ > * Collaboration: GitHub / Scrum Board
+> 3. What will be the input/output of your project?
+>    * Input:
+>      * Player commands allowing them to choose an action (investigate", "talk", "switch locations", "analyze")
+>      * Different options to move forward changing certain outcomes based on what's chosen
+>    * Output:
+>      * Narrative text: location descriptions, discovered clues, dialogue
+>      * Menus/prompts for actions for player to choose from
+>      * Inventory/evidence collected + suspect profiles
+>      * Win/Lose screen (there’s a time limit or limited number of actions)
 > 
+ > 4. What are the features that the project provides? 
+ > 
 > Finally, one member from your team needs to submit the Project Group Signups form (link available on Canvas) to provide a link to your team's project repository before the deadline for this porposal phase.
  > ## Phase II
  > In addition to completing the "User Interface Specification" and "Class Diagram" sections below, you will need to:
