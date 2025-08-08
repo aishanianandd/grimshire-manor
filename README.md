@@ -4,7 +4,6 @@
  > Prompt text is any lines beginning with "\>"
  > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
 # Murder Mystery
- > Your author list below should include links to all members GitHub (remove existing author).
  
  > Authors: [Ashita Srinivasmurthy](https://github.com/ashita-816), [Rian McCreery](https://github.com/hmccr001), [Aishani Anand](https://github.com/aishanianandd), [Kesia Fernandes](https://github.com/kcafernandes)
 
