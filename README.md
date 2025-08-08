@@ -23,8 +23,8 @@ A text-based role-playing game made in C++ where the player assumes the role of 
 
 ### Tools and Technologies Used
 
-- C++ (compiled with `g++` or `clang++`)
-- CMake / Make for building the project
+- Language: C++ 
+- CMake / Make / g++ / clang++ for compilation
 - GitHub & Scrum Board for collaboration
 - GoogleTest for unit testing
 - Valgrind for debugging
