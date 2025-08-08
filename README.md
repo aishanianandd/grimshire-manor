@@ -38,24 +38,28 @@
 >      * Inventory/evidence collected + suspect profiles
 >      * Win/Lose screen (there’s a time limit or limited number of actions)
 > 
- > 4. What are the features that the project provides? 
- > Environment:
- >      * Multiple location options to investigate
- >      * Each location contains interactive NPCs and items/clues.
- >    *Characters:
- >      * NPC: name, role, alibi, and dialogue options.
- >      * Clues: objects or testimony → info on where it’s found and who it implicates/clears
- >    *Action system:
- >      * Investigate → search the current location to reveal a clue
- >      * talk →  ask NPCs questions using given dialogue choices
- >      * move →  switch to another location.
- >      * analyze →  review collected clues and suspect information
- >      * accuse →  make a final choice about who committed the murder
- >     *Win/Loss conditions
- >      * Player picks a suspect to accuse
- >      * System checks if its the true criminal and shows win or lose
- >      * Timer/turn limit (loses if runs out of time/used up all turns)
->         
+>  4. What are the features that the project provides?
+>
+>     #### Environment:
+>     - Multiple location options to investigate  
+>     - Each location contains interactive NPCs and items/clues
+>
+>     #### Characters:
+>     - NPCs: name, role, alibi, and dialogue options  
+>     - Clues: objects or testimony → info on where it’s found and who it implicates/clears
+>
+>     #### Action System:
+>     - Investigate → search the current location to reveal a clue  
+>     - Talk → ask NPCs questions using given dialogue choices  
+>     - Move → switch to another location  
+>     - Analyze → review collected clues and suspect information  
+>     - Accuse → make a final choice about who committed the murder
+>
+>     #### Win/Loss Conditions:
+>     - Player picks a suspect to accuse  
+>     - System checks if it's the true criminal and shows win or lose  
+>     - Timer/turn limit (loses if runs out of time or turns)
+>   
 > Finally, one member from your team needs to submit the Project Group Signups form (link available on Canvas) to provide a link to your team's project repository before the deadline for this porposal phase.
  > ## Phase II
  > In addition to completing the "User Interface Specification" and "Class Diagram" sections below, you will need to:
