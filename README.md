@@ -23,23 +23,41 @@
 > 1. Why is it important or interesting to you?
  >  * It’s fun to build and easy to demo since text-based means we can focus more on logic and systems instead of graphics. It also mixes storytelling with problem-solving where we can prioritize creativity in writing a compelling narrative, while also improving our software developing skills and gaining more experience.
 > 2. What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- > * Language: C++
- > * Compile/Run: CMake/Make, g++/clang++
- > * Unit Testing: GoogleTest
- > * Debugging: Valgrind 
- > * Collaboration: GitHub / Scrum Board
+    > * Language: C++
+    > * Compile/Run: CMake/Make, g++/clang++
+    > * Unit Testing: GoogleTest
+    > * Debugging: Valgrind 
+    > * Collaboration: GitHub / Scrum Board
+
 > 3. What will be the input/output of your project?
 >    * Input:
->      * Player commands allowing them to choose an action (investigate", "talk", "switch locations", "analyze")
->      * Different options to move forward changing certain outcomes based on what's chosen
+    >      * Player commands allowing them to choose an action (investigate", "talk", "switch locations", "analyze")
+    >      * Different options to move forward changing certain outcomes based on what's chosen
 >    * Output:
->      * Narrative text: location descriptions, discovered clues, dialogue
->      * Menus/prompts for actions for player to choose from
->      * Inventory/evidence collected + suspect profiles
->      * Win/Lose screen (there’s a time limit or limited number of actions)
+    >      * Narrative text: location descriptions, discovered clues, dialogue
+    >      * Menus/prompts for actions for player to choose from
+    >      * Inventory/evidence collected + suspect profiles
+    >      * Win/Lose screen (there’s a time limit or limited number of actions)
 > 
- > 4. What are the features that the project provides? 
- > 
+ > 4. What are the features that the project provides?
+ >    Environment:
+ >      * Multiple location options to investigate
+ >      * Each location contains interactive NPCs and items/clues.
+ >    Characters:
+ >      * NPC: name, role, alibi, and dialogue options.
+ >      * Clues: objects or testimony → info on where it’s found and who it implicates/clears
+ >    Action system:
+ >      * Investigate → search the current location to reveal a clue
+ >      * talk →  ask NPCs questions using given dialogue choices
+ >      * move →  switch to another location.
+ >      * analyze →  review collected clues and suspect information
+ >      * accuse →  make a final choice about who committed the murder
+ >     Win/Loss conditions
+ >      * Player picks a suspect to accuse
+ >      * System checks if its the true criminal and shows win or lose
+ >      * Timer/turn limit (loses if runs out of time/used up all turns)
+ >
+ 
 > Finally, one member from your team needs to submit the Project Group Signups form (link available on Canvas) to provide a link to your team's project repository before the deadline for this porposal phase.
  > ## Phase II
  > In addition to completing the "User Interface Specification" and "Class Diagram" sections below, you will need to:
