@@ -42,16 +42,16 @@
  > Environment:
  >      * Multiple location options to investigate
  >      * Each location contains interactive NPCs and items/clues.
- >    Characters:
+ >    *Characters:
  >      * NPC: name, role, alibi, and dialogue options.
  >      * Clues: objects or testimony → info on where it’s found and who it implicates/clears
- >    Action system:
+ >    *Action system:
  >      * Investigate → search the current location to reveal a clue
  >      * talk →  ask NPCs questions using given dialogue choices
  >      * move →  switch to another location.
  >      * analyze →  review collected clues and suspect information
  >      * accuse →  make a final choice about who committed the murder
- >     Win/Loss conditions
+ >     *Win/Loss conditions
  >      * Player picks a suspect to accuse
  >      * System checks if its the true criminal and shows win or lose
  >      * Timer/turn limit (loses if runs out of time/used up all turns)
