@@ -81,7 +81,7 @@ A text-based role-playing game made in C++ where the player assumes the role of 
 ## User Interface Specification
 
 ### Navigation Diagram
-> Draw a diagram illustrating how the user can navigate from one screen to another. Here is an [example](https://creately.com/diagram/example/ikfqudv82/user-navigation-diagram-classic?r=v). Nodes represent the different screens in your program and arrows represent the way to navigate from one screen to another. It can be useful to label each symbol that represents a screen so that you can reference the screens in the next section or the rest of the document if necessary. Give a brief description of what the diagram represents.
+> <img width="1183" height="564" alt="Screenshot 2025-08-20 at 12 29 19 PM" src="https://github.com/user-attachments/assets/1a94289b-ec47-41c1-8b47-7a6ac201ceb8" />
 
 ### Screen Layouts
 > Click [here](https://docs.google.com/document/d/1NH2fJ62OaL5OKfC7YfcQBNCQ8bFwoK7yt_qhrNwcQig/edit?usp=sharing) to view screen layouts.
