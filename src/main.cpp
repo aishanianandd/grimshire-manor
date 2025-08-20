@@ -15,6 +15,18 @@ void type(string text, int speed = 30){
 }
 
 int main(){
+    const char* MANSION = R"MANSION(
+      `'::::.
+        _____A_
+       /      /\
+    __/__/\__/  \___
+---/__|" '' "| /___/\----
+   |''|"'||'"| |' '||
+   `""`""))""`"`""""`
+)MANSION";
+
+    type(MANSION, 2);
+    cout << endl;
     // printing the introduction
     type("Ah yes… the Grimshires.\n");
     type("The most prestigious family in the nation—wealthy, influential, adored by high society.\n");
