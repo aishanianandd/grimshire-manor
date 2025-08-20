@@ -1,64 +1,85 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/DM7iZNjj)
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=20043151)
- > As you complete each section you **must** remove the prompt text. Every *turnin* of this project includes points for formatting of this README so keep it clean and keep it up to date. 
- > Prompt text is any lines beginning with "\>"
- > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
 # Murder Mystery
- > Your author list below should include links to all members GitHub (remove existing author).
  
- > Authors: \[Ashita Srinivasmurthy](https://github.com/ashita-816), [Rian McCreery](https://github.com/hmccr001), [Aishani Anand](https://github.com/aishanianandd), [Kesia Fernandes](https://github.com/kcafernandes)
-
- > You will be forming a group of **FOUR** students and working on an interesting project. The project has 4 phases, each one with specific requirements. A list of proposed project ideas that have been successful in previous quarters is listed in the project specifications document on Canvas. You can select an idea from the list and start thinking about the features you will implement. If you want to propose your own original idea, you will have to contact your instructor to discuss the project and obtain written permission before you submit your project proposal (Phase 1). The project work should be divided almost equally among team members. You can of course help each other, but it needs to be clear who will be responsible for which features. Additionally, you are expected to follow Scrum patterns, specifically the use of a Scrum (Project) board, Sprints, and Scrum meetings.
-
- > ## Expectations
- > * The backend of your project should be implemented in C++. If you wish to choose anoher programming language (e.g. Java, Python), please discuss with your lab TA to obtain permission.
- > * You can incorporate additional technologies/tools but they must be approved (in writing) by the instructor or the TA.
- > * Each member of the group **must** be committing code regularly and make sure their code is correctly attributed to them. We will be checking attributions to determine if there was equal contribution to the project.
- > * **Each member of the group must actively participate in the Github Project board, writing unit tests, and reviewing commited code.**
-> * All project phases are to be submitted to this GitHub repository. You should modify this README file to reflect the different phases of the project. In addition, you should regularly hold sprint meetings with your group. You will need to hold two to three scrum/check-in meetings with your lab TA/reader at different times in addition to the final demo.
+ > Authors: [Ashita Srinivasmurthy](https://github.com/ashita-816), [Rian McCreery](https://github.com/hmccr001), [Aishani Anand](https://github.com/aishanianandd), [Kesia Fernandes](https://github.com/kcafernandes)
 
 > ## Project Description
  > Our text-based role playing game will have a murder mystery theme, where the player will take on the role of a detective. 
 
-> 1. Why is it important or interesting to you?
- >  * It’s fun to build and easy to demo since text-based means we can focus more on logic and systems instead of graphics. It also mixes storytelling with problem-solving where we can prioritize creativity in writing a compelling narrative, while also improving our software developing skills and gaining more experience.
-> 2. What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
-    > * Language: C++
-    > * Compile/Run: CMake/Make, g++/clang++
-    > * Unit Testing: GoogleTest
-    > * Debugging: Valgrind 
-    > * Collaboration: GitHub / Scrum Board
+### Murder Mystery RPG – Text-Based Game
 
-> 3. What will be the input/output of your project?
->    * Input:
-    >      * Player commands allowing them to choose an action (investigate", "talk", "switch locations", "analyze")
-    >      * Different options to move forward changing certain outcomes based on what's chosen
->    * Output:
-    >      * Narrative text: location descriptions, discovered clues, dialogue
-    >      * Menus/prompts for actions for player to choose from
-    >      * Inventory/evidence collected + suspect profiles
-    >      * Win/Lose screen (there’s a time limit or limited number of actions)
-> 
- > 4. What are the features that the project provides?
- >    Environment:
- >      * Multiple location options to investigate
- >      * Each location contains interactive NPCs and items/clues.
- >    Characters:
- >      * NPC: name, role, alibi, and dialogue options.
- >      * Clues: objects or testimony → info on where it’s found and who it implicates/clears
- >    Action system:
- >      * Investigate → search the current location to reveal a clue
- >      * talk →  ask NPCs questions using given dialogue choices
- >      * move →  switch to another location.
- >      * analyze →  review collected clues and suspect information
- >      * accuse →  make a final choice about who committed the murder
- >     Win/Loss conditions
- >      * Player picks a suspect to accuse
- >      * System checks if its the true criminal and shows win or lose
- >      * Timer/turn limit (loses if runs out of time/used up all turns)
- >
- 
-> Finally, one member from your team needs to submit the Project Group Signups form (link available on Canvas) to provide a link to your team's project repository before the deadline for this porposal phase.
+A text-based role-playing game made in C++ where the player assumes the role of a detective solving a murder case through exploration and logical reasoning.
+
+---
+
+### Why is it important or interesting to us?
+
+> It’s fun to build and easy to demo since text-based means we can focus more on logic and systems instead of graphics.  
+>
+> It also mixes storytelling with problem-solving where we can prioritize creativity in writing a compelling narrative, while also improving our software developing skills and gaining more experience.
+
+---
+
+### Tools and Technologies Used
+
+- Language: C++ 
+- CMake / Make / g++ / clang++ for compilation
+- GitHub & Scrum Board for collaboration
+- GoogleTest for unit testing
+- Valgrind for debugging
+
+---
+
+### Input / Output
+
+#### Input:
+- Player uses commands like `investigate`, `talk`, `switch locations`, and `analyze`.
+- Choices and interactions are input to progress through the game.
+
+#### Output:
+- Description of locations and characters
+- Menu of possible actions (inputs)
+- Inventory of clues and suspect info
+- Win/Lose screen
+
+---
+
+### What are the features that the project provides?
+
+
+#### Environment:
+>- Multiple locations to visit
+>- Each location includes interactive NPCs, clues, and items
+  
+
+#### Characters:
+>- Each NPC (non-player character) has a name, role, alibi, and dialogue options
+  
+
+#### Clues:
+>- Each clue has information such as where it was found and who it implicates or supports
+
+
+#### Actions Available to the Player
+
+>- **Investigate** the current location for clues
+>- **Talk** to NPCs using multiple dialogue options
+>- **Move** to a different location
+>- **Analyze** the collected clues and suspect info
+>- **Accuse** a suspect
+  
+
+#### Win/Lose Conditions
+
+>- Player must guess who the murderer is
+>- Game ends if the player guesses correctly or incorrectly
+>- Player may also lose if they run out of time or turns
+>
+>
+---
+
+
  > ## Phase II
  > In addition to completing the "User Interface Specification" and "Class Diagram" sections below, you will need to:
  > * Create an "Epic" (note) for each feature. Place these epics in the `Product Backlog` column
