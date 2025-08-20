@@ -13,3 +13,5 @@ void type(string text, int speed = 30){
         this_thread::sleep_for(chrono::milliseconds(speed));
     }
 }
+
+int main(){}
