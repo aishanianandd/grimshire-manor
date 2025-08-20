@@ -34,4 +34,10 @@ int main(){
     type("The lives, the lies, the legacy of the Grimshires now rest in your hands.\n\n");
 
     type("Tell me, detective—are you ready to face what waits in the dark?\n\n");
+
+    // auraful title box
+    type("|=================================================|\n", 2);
+    type("|            THE GRIMSHIRE MANOR MURDER           |\n", 2);
+    type("|=================================================|\n\n", 2);
+
 }
