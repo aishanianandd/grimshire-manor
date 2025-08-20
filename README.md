@@ -89,6 +89,32 @@ A text-based role-playing game made in C++ where the player assumes the role of 
 ## Class Diagram
 > <img width="3040" height="1984" alt="Class Diagram" src="https://github.com/user-attachments/assets/bbc074f2-64bf-4593-a814-cf0648efa4b4" />
 
+## SOLID Principles
+
+Single Responsibility Principle (SRP)
+
+We applied SRP by splitting the game into focused classes like Game, Location, Action, NPC, and Clue, each handling only one responsibility.
+This helped because each class became simpler to test, and changing one behavior (like dialogue) didn’t break unrelated parts of the game.
+
+Open/Closed Principle (OCP)
+
+We applied OCP by introducing abstract classes (Action, Location) so we can add new commands or rooms without modifying existing code.
+This helped because new features could be added as subclasses instead of editing the core game logic, reducing the chance of bugs.
+
+Liskov Substitution Principle (LSP)
+
+We applied LSP by ensuring that all subclasses (Talk, Move, Investigate, etc.) follow the same Action interface, and all room types extend Location.
+This helped because the Game can treat all actions and rooms the same way, making the system flexible and consistent.
+
+Interface Segregation Principle (ISP)
+
+We applied ISP by keeping interfaces small, like Action only having execute() and name(), and Location exposing only what actions need.
+This helped because no class was forced to implement unused methods, which kept the design cleaner and easier to extend.
+
+Dependency Inversion Principle (DIP)
+
+We applied DIP by making the Game depend on abstractions (Action, Location) instead of concrete subclasses.
+This helped because new actions or rooms can be swapped in without changing the game loop, keeping the code stable and testable.
  
  > ## Phase III
  > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
