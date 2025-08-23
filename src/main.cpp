@@ -55,6 +55,7 @@ int main(){
     // ask the player a question
     type("Are you up to the task, detective?\n\n");
     cout << "A) Yes\nB) No\n";
+    cout << endl;
     cout << "Enter your choice: ";
 
     // responses to the selected choice
