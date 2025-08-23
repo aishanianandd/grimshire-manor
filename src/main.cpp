@@ -3,6 +3,8 @@
 #include <thread>
 #include <chrono>
 
+#include "game.h"
+
 using namespace std;
 
 // made a function to type slowly like a typewriter, instead of the speedy cout
