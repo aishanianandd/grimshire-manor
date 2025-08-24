@@ -1,5 +1,5 @@
 #include <iostream>
-#include "include/game.h"
+#include "Game.h"
 
 bool Game::move(const std::string& choice) {  // to move from location to location
     if (choice == "f") {

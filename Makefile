@@ -1,13 +1,24 @@
-# Name of the program we want to create
-TARGET = main
+# Name of the program
+TARGET = game
 
-# src file to compile
-SRC = src/main.cpp
+# Compiler + flags
+CXX = g++
+CXXFLAGS = -std=c++17 -Wall -Wextra -Iinclude
 
-# build program
-$(TARGET): $(SRC)
-	g++ $(SRC) -o $(TARGET)
+# Source files (all .cpp in src + subfolders)
+SRC := $(wildcard src/*.cpp src/Locations/*.cpp)
 
-# run program
+# Objects
+OBJ := $(SRC:.cpp=.o)
+
+# Build
+$(TARGET): $(OBJ)
+	$(CXX) $(CXXFLAGS) $(OBJ) -o $(TARGET)
+
+# Run
 run: $(TARGET)
 	./$(TARGET)
+
+# Clean
+clean:
+	rm -f $(OBJ) $(TARGET)

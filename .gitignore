@@ -1,1 +1,6 @@
-src/main
+# object files
+*.o
+
+# executables
+/game
+/main

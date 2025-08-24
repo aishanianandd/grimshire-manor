@@ -7,7 +7,7 @@ class Location {
     std::string description;
 
     Location(std::string name, std::string description);
-    void Location::describe() const;
+    void describe() const;
     virtual ~Location() = default;
 };
 

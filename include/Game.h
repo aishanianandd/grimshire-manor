@@ -4,20 +4,25 @@
 
 #include "Character.h"
 #include "Clue.h"
-#include "Game.h"
 #include "Location.h"
+
+using std::vector;
+using std::string;
 
 class Game {
     private: 
         bool running;
-        std::vector<Character> suspects;    // character.h to be implemented
-        std::vector<Clue> clues;            // clue.h to be implemented
+        vector<Character> suspects;    // character.h to be implemented
+        vector<Clue> clues;            // clue.h to be implemented
         Location* currentLocation_ = nullptr;
+
+
     public:
-        bool move(const std::string& roomName);
+        Game();
+
 
     // helpers
         Location* findRoom(const std::string& roomName) const;
-        bool move(const std::string& roomName);
+        bool move(const string& roomName);
         void describe() const;
 };
