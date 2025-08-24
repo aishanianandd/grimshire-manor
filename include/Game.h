@@ -2,16 +2,16 @@
 #include <vector>
 #include <string>
 
-#include "character.h"
-#include "clue.h"
-#include "game.h"
-#include "location.h"
+#include "Character.h"
+#include "Clue.h"
+#include "Game.h"
+#include "Location.h"
 
 class Game {
     private: 
         bool running;
-        std::vector<character> suspects;    // character.h to be implemented
-        std::vector<clue> clues;            // clue.h to be implemented
+        std::vector<Character> suspects;    // character.h to be implemented
+        std::vector<Clue> clues;            // clue.h to be implemented
         Location* currentLocation_ = nullptr;
     public:
         bool move(const std::string& roomName);

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "location.h"
+#include "Location.h"
 
 Location::Location(std::string n, std::string d) :
 name(std::move(n)), description(std::move(d)) {}

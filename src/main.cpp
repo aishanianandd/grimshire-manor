@@ -3,7 +3,7 @@
 #include <thread>
 #include <chrono>
 
-#include "game.h"
+#include "Game.h"
 
 using namespace std;
 
