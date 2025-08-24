@@ -75,4 +75,51 @@ int main(){
             cout << "Enter your choice: ";
         }
     }
+
+
+    // Start game loop
+    Game game;
+    game.initSuspects(); // initialize NPCs with alibis
+    bool running = true;
+
+    while (running) {
+        cout << "\n=== What do you want to do? ===\n";
+        cout << "F) Go to Foyer\nB) Go to Bedroom\nK) Go to Kitchen\n";
+        cout << "O) Go to Office\nL) Go to Library\n";
+        cout << "T) Talk to NPC\nC) Review Clues\nS) Review Statements\nQ) Quit\n";
+        cout << "Enter your choice: ";
+        getline(cin, choice);
+
+        // ----------------- Movement -----------------
+        if (choice == "F" || choice == "f") game.move("f");
+        else if (choice == "B" || choice == "b") game.move("b");
+        else if (choice == "K" || choice == "k") game.move("k");
+        else if (choice == "O" || choice == "o") game.move("o");
+        else if (choice == "L" || choice == "l") game.move("l");
+
+        // ----------------- Talk to NPC -----------------
+        else if (choice == "T" || choice == "t") {
+            string npcChoice;
+            cout << "Who do you want to talk to? (Lenora/Alexander/Celeste/Alfred/Dante/Jellal): ";
+            getline(cin, npcChoice);
+            game.talkToNPC(npcChoice); // dynamically fetch from suspects vector
+        }
+
+        // ----------------- Review clues -----------------
+        else if (choice == "C" || choice == "c") game.reviewClues();
+
+        // ----------------- Review statements -----------------
+        else if (choice == "S" || choice == "s") game.reviewStatements();
+
+        // ----------------- Quit -----------------
+        else if (choice == "Q" || choice == "q") {
+            cout << "Exiting the game. Goodbye!\n";
+            running = false;
+        }
+
+        // ----------------- Invalid input -----------------
+        else cout << "Invalid choice. Try again.\n";
+    }
+
+    return 0;
 }

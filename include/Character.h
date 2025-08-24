@@ -10,6 +10,6 @@ class Character {
     public:
         Character(const string& name, const string& alibi);     // add characters as story progresses w/ this constructor
         void printInfo();                                       // prints all info: character name + dialogue
-        string getName();                                       // returns character name
-        string getAlibi();                                      // return their alibi
+        string getName() const;                                       // returns character name
+        string getAlibi() const;                                      // return their alibi
 };
