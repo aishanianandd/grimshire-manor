@@ -22,6 +22,11 @@ class Game {
     public:
     // helpers
 
+        // prints intro including the mansion + title
+        void printIntroduction();
+        // prints 
+
+
         // movements 
         bool move(const std::string& roomName);
 
