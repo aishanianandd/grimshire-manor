@@ -3,7 +3,7 @@
 Office::Office()
 : Location(
     "Office",
-    "A tidy desk faces the window. A faint bitter, metallic smell lingers. Something about the chair looks off."
+    "A tidy desk faces the window. A faint bitter, metallic smell lingers. Something about the chair looks off.\n"
 ) {
     addOption("Open the desk drawer (photograph)");
     addOption("Read the sticky note on the desk");
