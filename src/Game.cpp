@@ -234,7 +234,7 @@ void Game::printSuspectIntroduction() {
 
         switch (choice) {
             case 'a':
-                cout << "[Lenora Grimshire]\n"
+                cout << "[Lenora Grimshire]:\n\n"
                         "\"After I’d greeted everyone and made my rounds in the ballroom, "
                         "I began to feel a bit lightheaded… too much champagne, perhaps. "
                         "Around 1:30, I excused myself and went upstairs to my boudoir. "
@@ -245,7 +245,7 @@ void Game::printSuspectIntroduction() {
                 break;
 
             case 'b':
-                cout << "[Jellal Vexley]\n"
+                cout << "[Jellal Vexley]:\n\n"
                         "\"Ah yes, I was in the library lounge most of the night. "
                         "We had a lively crowd at first, but by about 2:15 they’d wandered off to the ballroom. "
                         "I stayed behind, poured myself another brandy, and settled by the fire to review some papers. "
@@ -255,7 +255,7 @@ void Game::printSuspectIntroduction() {
                 break;
 
             case 'c':
-                cout << "[Alexander Grimshire]\n"
+                cout << "[Alexander Grimshire]:\n\n"
                         "\"Just before two o’clock, I stepped out of the ballroom — a confidential business call couldn’t wait. "
                         "I took it in the upstairs office where it was quieter. Damian’s name came up more than once, "
                         "and certain investors are still furious about his handling of a deal. "
@@ -264,7 +264,7 @@ void Game::printSuspectIntroduction() {
                 break;
 
             case 'd':
-                cout << "[Celeste Grimshire]\n"
+                cout << "[Celeste Grimshire]:\n\n"
                         "\"The ballroom? Please… you know I can only take so much of those tedious society types. "
                         "I slipped into the kitchen not long after dinner and found Dante there. "
                         "We ended up talking about a new pastry recipe he’s been working on. "
@@ -273,7 +273,7 @@ void Game::printSuspectIntroduction() {
                 break;
 
             case 'e':
-                cout << "[Alfred Crane]\n"
+                cout << "[Alfred Crane]:\n\n"
                         "\"I was on my feet all evening, as you’d expect — making rounds between the dining room and ballroom. "
                         "Around 12:00 I began polishing the silver in the dining room. "
                         "By the time the clock was nearing 3:00, I’d moved on to arranging flowers in the foyer. "
@@ -281,7 +281,7 @@ void Game::printSuspectIntroduction() {
                 break;
 
             case 'f':
-                cout << "[Dante Vermillion]\n"
+                cout << "[Dante Vermillion]:\n\n"
                         "\"I was in the kitchen most of the night. Celeste joined me for a bit; we shared tea and talked recipes. "
                         "She left a little before 3:00, and I stayed behind to tidy up. "
                         "I put away the silver, wiped the counters, made sure everything was ready for breakfast. "
