@@ -50,7 +50,7 @@ int main(){
     }
 
 
-    // Start game loop
+    // start game loop
     game.initSuspects(); // initialize options in the menu 
 
     while (running) {
@@ -61,7 +61,7 @@ int main(){
         cout << "Enter your choice: ";
         getline(cin, choice);
 
-        // ----------------- Movement -----------------
+        //  movement 
         if (choice == "A" || choice == "a") game.move("a");
         else if (choice == "B" || choice == "b") game.move("b");
         else if (choice == "C" || choice == "c") game.move("c");
@@ -82,13 +82,13 @@ int main(){
         // ----------------- Review statements -----------------
       //  else if (choice == "S" || choice == "s") game.reviewStatements();
 
-        // ----------------- Quit -----------------
+        //  quit 
         else if (choice == "Q" || choice == "q") {
             cout << "Exiting the game. Goodbye!\n";
             running = false;
         }
 
-        // ----------------- Invalid input -----------------
+        //  invalid input
         else cout << "Invalid choice. Try again.\n";
     }
 
