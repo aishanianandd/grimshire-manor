@@ -2,16 +2,16 @@
 #include "Game.h"
 
 bool Game::move(const std::string& choice) {  // to move from location to location
-    if (choice == "f") {
+    if (choice == "a") {
         delete currentLocation_; // ...frees memory of the old room??
         currentLocation_ = new Foyer();
     } else if (choice == "b") {
         currentLocation_ = new Bedroom();
-    } else if (choice == "k") {
+    } else if (choice == "c") {
         currentLocation_ = new Kitchen();
-    } else if (choice == "o") {
+    } else if (choice == "d") {
         currentLocation_ = new Office();
-    } else if (choice == "l") {
+    } else if (choice == "e") {
         currentLocation_ = new Library();
     } else {
         std::cout << "Invalid option. Try again.\n";
