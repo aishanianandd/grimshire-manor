@@ -45,8 +45,8 @@ char Suspect::TalkOptions() {
     return input;
 }
 
-void Suspect::TalkToSuspect(const Suspect& Suspect) const{
-    std::cout << "Name: " << getName() << std::endl;
-    std::cout << "Description: " << getDescription() << std::endl;
-    std::cout << "Alibi: " << getAlibi() << std::endl; 
+void Suspect::TalkToSuspect(const Suspect& suspect) const {
+    std::cout << "Name: " << suspect.getName() << std::endl;
+    std::cout << "Description: " << suspect.getDescription() << std::endl;
+    std::cout << "Alibi: " << suspect.getAlibi() << std::endl; 
 }
