@@ -210,7 +210,7 @@ void Game::printSuspectIntroduction() {
     cout << "--------------------------------------------" << endl;
     cout << endl;
     
-    std::cout << "\n--- The Police Station ---\n"
+    std::cout << "\n--- The Police Station ---\n\n" // added \n rn 
                  "You arrive at the station where the main suspects await questioning.\n"
                  "Interview anyone in any order. (Q to quit)\n\n";
 
