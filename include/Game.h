@@ -5,6 +5,7 @@
 #include "Character.h"
 #include "Clue.h"
 #include "Location.h"
+#include "Suspect.h"
 
 using std::vector;
 using std::string;
@@ -47,8 +48,8 @@ class Game {
         void reviewStatements() const;
        
         // suspects (#11)
-        void initSuspects();
-        //void talkToSuspect(const string& suspectName);
+        char TalkOptions();
+        void TalkToSuspect(Suspect& suspect);
 
 
        // optional helper for main loop

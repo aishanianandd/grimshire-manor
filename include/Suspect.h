@@ -13,7 +13,6 @@ class Suspect {
 		std::string getDescription() const;			//returns when player selects "talk"
 		std::string getAlibi() const;				//returns when player selects "question"
 		void TalkToSuspect(const Suspect& suspect) const;
-		char TalkOptions();
 	private:
 		std::string name;
 		std::string description;
