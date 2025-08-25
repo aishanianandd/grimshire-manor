@@ -42,6 +42,7 @@ class Game {
        
         // suspects (#11)
         void initSuspects();
+        void talkToSuspect(const string& suspectName);
 
 
        // optional helper for main loop

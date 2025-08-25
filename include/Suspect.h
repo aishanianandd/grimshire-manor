@@ -1,17 +1,18 @@
-#ifndef NONPLAYERCHARACTER_H
-#define NONPLAYERCHARACTER_H
+#ifndef SUSPECT_H
+#define SUSPECT_H
 
 #include <string>
 
-class NonPlayerCharacter {
+class Suspect {
 	public:
-		NonPlayerCharacter(const std::string name,
+		Suspect(const std::string name,
 						   const std::string description,
 						   const std::string alibi);		//constructor
 
 		std::string getName() const;				//returns NPC name
 		std::string getDescription() const;			//returns when player selects "talk"
 		std::string getAlibi() const;				//returns when player selects "question"
+		char Suspect::TalkOptions();
 	private:
 		std::string name;
 		std::string description;
