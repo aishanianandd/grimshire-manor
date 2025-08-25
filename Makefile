@@ -5,20 +5,15 @@ TARGET = game
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -Iinclude
 
-# Source files (all .cpp in src + subfolders)
+# Source files
 SRC := $(wildcard src/*.cpp src/Locations/*.cpp)
 
-# Objects
-OBJ := $(SRC:.cpp=.o)
+# Build final executable directly (no .o rules)
+$(TARGET):
+	$(CXX) $(CXXFLAGS) $(SRC) -o $(TARGET)
 
-# Build
-$(TARGET): $(OBJ)
-	$(CXX) $(CXXFLAGS) $(OBJ) -o $(TARGET)
-
-# Run
 run: $(TARGET)
 	./$(TARGET)
 
-# Clean
 clean:
-	rm -f $(OBJ) $(TARGET)
+	rm -f $(TARGET)

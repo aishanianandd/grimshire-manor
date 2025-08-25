@@ -4,10 +4,6 @@
 
 #include "Character.h"
 #include "Clue.h"
-
-
-// #include "Game.h" commented bc, is this supposed to be here?
->>>>>>> 649f65b (Implemented Clue Discovery (#5), NPC Statements (#12), and Suspect Alibis (#11))
 #include "Location.h"
 
 using std::vector;
@@ -24,9 +20,14 @@ class Game {
 
 
     public:
-
-
     // helpers
+
+        // prints intro including the mansion + title
+        void printIntroduction();
+        // prints 
+
+        // introduces the suspects at the polic staion
+        void printSuspectIntroduction();
 
         // movements 
         bool move(const std::string& roomName);
@@ -34,6 +35,7 @@ class Game {
 
         // find room by name 
         Location* findRoom(const std::string& roomName) const;
+        void visit(Location& room);
 
 
 
@@ -48,6 +50,7 @@ class Game {
        
         // suspects (#11)
         void initSuspects();
+        //void talkToSuspect(const string& suspectName);
 
 
        // optional helper for main loop

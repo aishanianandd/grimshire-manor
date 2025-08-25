@@ -1,10 +1,11 @@
+#include "Location.h"
 
-
-#include "Location.h" 
->>>>>>> 649f65b (Implemented Clue Discovery (#5), NPC Statements (#12), and Suspect Alibis (#11))
-
-Foyer::Foyer() : Location(
+Foyer::Foyer()
+: Location(
     "Foyer",
-    "Center of the manor beneath a crystal chandelier. "
-    "Moonlight reflects off marble floors; broken glass stains the stairs."
-) {}
+    "Polished floors, a grand staircase, and the front door latched from within. Quiet echoes under the high ceiling."
+) {
+    addOption("Examine the staircase");
+    addOption("Inspect the front door latch");
+    addOption("Look for scuff marks / footprints");
+}
