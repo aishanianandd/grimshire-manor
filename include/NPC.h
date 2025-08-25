@@ -16,7 +16,6 @@ class NonPlayerCharacter {
 		std::string name;
 		std::string description;
 		std::string alibi;
-		std::string blame;
 };
 
 #endif

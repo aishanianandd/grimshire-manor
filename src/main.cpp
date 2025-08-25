@@ -52,9 +52,12 @@ int main(){
     cout << endl;
     cout << "Enter your choice: ";
 
+    Game game;
+
     // responses to the selected choice
     string choice;
     bool choiceMade = false;
+    bool running = false;
     while(choiceMade == false){
         getline(cin, choice);
         if(choice == "a" || choice == "A" || choice == "yes" || choice == "Yes") {
@@ -62,11 +65,13 @@ int main(){
             type("\nVery Well. The fate of the investigation now rests with you.\n");
             type("Tread carefully… every word, every glance, every clue matters.\n");
             type("Let us begin.\n");
+            running = true;
         } else if(choice == "b" || choice == "B" || choice == "no" || choice == "No") {
             choiceMade = true;
             type("\n…Ah. Perhaps the weight of the Grimshire legacy is too much for one soul to bear.\n");
             type("But justice waits for no one, detective.\n");
             type("When you are ready… the manor will still be here.\n");
+            running = false;
         } else {
             choiceMade = false;
             type("\nI didn’t quite catch that…\n");
@@ -79,12 +84,10 @@ int main(){
 
 
     // Start game loop
-    Game game;
     game.initSuspects(); // initialize NPCs with alibis
-    bool running = true;
 
     while (running) {
-        cout << "\n=== What do you want to do? ===\n";
+        cout << "\n=== What would you like to do? ===\n";
         cout << "F) Go to Foyer\nB) Go to Bedroom\nK) Go to Kitchen\n";
         cout << "O) Go to Office\nL) Go to Library\n";
         cout << "T) Talk to NPC\nC) Review Clues\nS) Review Statements\nQ) Quit\n";
