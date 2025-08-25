@@ -4,10 +4,6 @@
 
 #include "Character.h"
 #include "Clue.h"
-
-
-// #include "Game.h" commented bc, is this supposed to be here?
->>>>>>> 649f65b (Implemented Clue Discovery (#5), NPC Statements (#12), and Suspect Alibis (#11))
 #include "Location.h"
 
 using std::vector;
@@ -24,8 +20,6 @@ class Game {
 
 
     public:
-
-
     // helpers
 
         // movements 
