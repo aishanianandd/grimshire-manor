@@ -44,3 +44,9 @@ char Suspect::TalkOptions() {
     
     return input;
 }
+
+void TalkToSuspect(const Suspect& Suspect){
+    cout << "Name: " << getName 
+    cout << "Description: " << getDescription << endl;
+    cout << "Alibi: " << getAlibi << endl; 
+}
