@@ -27,6 +27,8 @@ class Game {
         void printIntroduction();
         // prints 
 
+        // introduces the suspects at the polic staion
+        void printSuspectIntroduction();
 
         // movements 
         bool move(const std::string& roomName);
