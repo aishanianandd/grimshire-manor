@@ -222,27 +222,30 @@ void Game::visit(Location& room) {
 }
 
 void Game::printSuspectIntroduction() {
-    cout << "\n--- The Police Station ---\n";
-    cout << "You arrive at the station where the main suspects await questioning.\n"
-            "Interview anyone in any order. (Q to quit)\n\n";
+    cout << "--------------------------------------------" << endl;
+    cout << endl;
+    
+    std::cout << "\n--- The Police Station ---\n"
+                 "You arrive at the station where the main suspects await questioning.\n"
+                 "Interview anyone in any order. (Q to quit)\n\n";
 
-    char choice;
     bool interviewing = true;
-
     while (interviewing) {
-        cout << "Who would you like to interview?\n"
-                "A) Lenora Grimshire (Wife)\n"
-                "B) Jellal Vexley (Best Friend)\n"
-                "C) Alexander Grimshire (Son)\n"
-                "D) Celeste Grimshire (Daughter)\n"
-                "E) Alfred Crane (Butler)\n"
-                "F) Dante Vermillion (Chef)\n"
-                "Q) Quit questioning\n"
-                "Enter your choice: ";
+        std::cout << "Who would you like to interview?\n"
+                     "A) Lenora Grimshire (Wife)\n"
+                     "B) Jellal Vexley (Best Friend)\n"
+                     "C) Alexander Grimshire (Son)\n"
+                     "D) Celeste Grimshire (Daughter)\n"
+                     "E) Alfred Crane (Butler)\n"
+                     "F) Dante Vermillion (Chef)\n"
+                     "Q) Quit questioning\n"
+                     "Enter your choice: ";
 
-        cin >> choice;
-        choice = std::tolower(choice);  // make lowercase so A/B works too
-        cout << "\n";
+        std::string line;
+        std::getline(std::cin, line);
+        if (line.empty()) { std::cout << "\n"; continue; }
+        char choice = std::tolower(line[0]);
+        std::cout << "\n";
 
         switch (choice) {
             case 'a':
@@ -302,6 +305,8 @@ void Game::printSuspectIntroduction() {
 
             case 'q':
                 cout << "You wrap up the questioning for now.\n\n";
+                cout << endl;
+                cout << "--------------------------------------------" << endl;
                 interviewing = false;
                 break;
 
