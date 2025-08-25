@@ -174,31 +174,27 @@ void Game::visit(Location& room) {
     }
 }
 
-char Game::TalkOptions() {  
-    char input;
+char Game::TalkOptions() {
+    while (true) {
+        std::cout << "Who would you like to talk to?\n"
+                     "(a) Damian's wife, Lenora Grimshire\n"
+                     "(b) Damian's best friend, Jellal Vexley\n"
+                     "(c) Damian's son, Alexander Grimshire\n"
+                     "(d) Damian's daughter, Celeste Grimshire\n"
+                     "(e) The butler, Alfred Crane\n"
+                     "(f) The chef, Dante Vermillion\n"
+                     "Please enter a letter a–f (or Q to quit): ";
 
-    std::cout << "Who would you like to talk to?" << std::endl;
+        std::string line;
+        if (!std::getline(std::cin, line)) return 'q';      // EOF/signal -> bail to menu
+        if (line.empty()) { std::cout << "\n"; continue; }
 
-    do {
-        std::cout << "(a) Damian's wife, Lenora Grimshire" << std::endl;
-        std::cout << "(b) Damian's best friend, Jellal Vexley" << std::endl;
-        std::cout << "(c) Damian's son, Alexander Grimshire" << std::endl;
-        std::cout << "(d) Damian's duaghter, Celeste Grimshire" << std::endl;
-        std::cout << "(e) The butler, Alfred Crane" << std::endl;
-        std::cout << "(f) The chef, Dante Vermillion" << std::endl;
-        std::cout << "Please enter a letter a-f" << std::endl;
+        char ch = static_cast<char>(std::tolower(static_cast<unsigned char>(line[0])));
+        if (ch >= 'a' && ch <= 'f') return ch;
+        if (ch == 'q') return 'q';
 
-        std::cin >> input;
-        input = tolower(input);     //in case the player enters capital
-
-        if (input < 'a' || input > 'f') {
-            std::cout << "Invalid input. Please enter a letter a-f" << std::endl;
-            std::cin >> input;
-        }
-
-    } while (input < 'a' || input > 'f');
-    
-    return input;
+        std::cout << "Invalid input. Please enter a letter a–f (or Q).\n\n";
+    }
 }
 
 void Game::TalkToSuspect(Suspect& suspect) {
