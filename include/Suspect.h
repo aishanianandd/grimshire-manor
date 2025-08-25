@@ -12,7 +12,7 @@ class Suspect {
 		std::string getName() const;				//returns NPC name
 		std::string getDescription() const;			//returns when player selects "talk"
 		std::string getAlibi() const;				//returns when player selects "question"
-		char Suspect::TalkOptions();
+		char TalkOptions();
 	private:
 		std::string name;
 		std::string description;
