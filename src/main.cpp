@@ -4,6 +4,7 @@
 #include <chrono>
 
 #include "Type.h"
+#include "Game.h"
 
 using namespace std;
 
