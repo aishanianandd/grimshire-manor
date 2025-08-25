@@ -56,7 +56,7 @@ int main(){
     while (running) {
         cout << "\n=== What would you like to do? ===\n";
         cout << "A) Go to Foyer\nB) Go to Bedroom\nC) Go to Kitchen\n";
-        cout << "D) Go to Office\nE) Go to Library\n";
+        cout << "D) Go to Office\nE) Go to Library\nF) Talk to Suspects\n";
         cout << "Q) Quit\n";
         cout << "Enter your choice: ";
         getline(cin, choice);
@@ -68,13 +68,13 @@ int main(){
         else if (choice == "D" || choice == "d") game.move("d");
         else if (choice == "E" || choice == "e") game.move("e");
 
-        // ----------------- Talk to NPC -----------------
-       // else if (choice == "T" || choice == "t") {
-          //  string npcChoice;
-          //  cout << "Who do you want to talk to? (Lenora/Alexander/Celeste/Alfred/Dante/Jellal): ";
-          //  getline(cin, npcChoice);
-          //  game.talkToNPC(npcChoice); // dynamically fetch from suspects vector
-       // }
+        // ----------------- Talk to Suspects -----------------
+        else if (choice == "F" || choice == "f") {
+            string userChoice;
+            cout << "Who do you want to talk to? (Lenora/Alexander/Celeste/Alfred/Dante/Jellal): ";
+            getline(cin, userChoice);
+            game.talkToSuspect(userChoice); // dynamically fetch from suspects vector
+        }
 
         // ----------------- Review clues -----------------
        // else if (choice == "C" || choice == "c") game.reviewClues();
