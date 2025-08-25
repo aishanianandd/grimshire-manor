@@ -49,9 +49,13 @@ int main(){
         }
     }
 
-
+    cout << endl;
+    game.printSuspectIntroduction();
+    cout << endl;
+    
     // start game loop
     game.initSuspects(); // initialize options in the menu 
+    
 
     while (running) {
         cout << "\n=== What would you like to do? ===\n";
