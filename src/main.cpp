@@ -86,30 +86,30 @@ int main(){
         cout << "\n=== What do you want to do? ===\n";
         cout << "F) Go to Foyer\nB) Go to Bedroom\nK) Go to Kitchen\n";
         cout << "O) Go to Office\nL) Go to Library\n";
-        cout << "T) Talk to NPC\nC) Review Clues\nS) Review Statements\nQ) Quit\n";
+        cout << "Q) Quit\n";
         cout << "Enter your choice: ";
         getline(cin, choice);
 
         // ----------------- Movement -----------------
-        if (choice == "F" || choice == "f") game.move("f");
+        if (choice == "A" || choice == "a") game.move("a");
         else if (choice == "B" || choice == "b") game.move("b");
-        else if (choice == "K" || choice == "k") game.move("k");
-        else if (choice == "O" || choice == "o") game.move("o");
-        else if (choice == "L" || choice == "l") game.move("l");
+        else if (choice == "C" || choice == "c") game.move("c");
+        else if (choice == "D" || choice == "d") game.move("d");
+        else if (choice == "E" || choice == "e") game.move("e");
 
         // ----------------- Talk to NPC -----------------
-        else if (choice == "T" || choice == "t") {
-            string npcChoice;
-            cout << "Who do you want to talk to? (Lenora/Alexander/Celeste/Alfred/Dante/Jellal): ";
-            getline(cin, npcChoice);
-            game.talkToNPC(npcChoice); // dynamically fetch from suspects vector
-        }
+       // else if (choice == "T" || choice == "t") {
+        //    string npcChoice;
+       //     cout << "Who do you want to talk to? (Lenora/Alexander/Celeste/Alfred/Dante/Jellal): ";
+          //  getline(cin, npcChoice);
+          //  game.talkToNPC(npcChoice); // dynamically fetch from suspects vector
+    //    }
 
         // ----------------- Review clues -----------------
-        else if (choice == "C" || choice == "c") game.reviewClues();
+     //   else if (choice == "C" || choice == "c") game.reviewClues();
 
         // ----------------- Review statements -----------------
-        else if (choice == "S" || choice == "s") game.reviewStatements();
+    //  else if (choice == "S" || choice == "s") game.reviewStatements();
 
         // ----------------- Quit -----------------
         else if (choice == "Q" || choice == "q") {
