@@ -33,6 +33,7 @@ class Game {
 
         // find room by name 
         Location* findRoom(const std::string& roomName) const;
+        void visit(Location& room);
 
 
 

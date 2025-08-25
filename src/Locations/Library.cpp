@@ -1,7 +1,11 @@
-#include "Location.h" 
+#include "Location.h"
 
-Library::Library() : Location(
+Library::Library()
+: Location(
     "Library",
-    "Tall shelves of leather-bound volumes ring a low fire. "
-    "A lounge chair faces the hearth; ashes still cling to the grate."
-) {}
+    "Dusty shelves and a cold hearth. Ash clings inside the fireplace; a side table holds scattered papers."
+) {
+    addOption("Investigate the fireplace (crumbled note)");
+    addOption("Inspect the side table (bank notice)");
+    addOption("Talk to NPC #1");
+}

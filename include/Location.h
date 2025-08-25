@@ -5,11 +5,14 @@ class Location {
     public:
     std::string name;
     std::string description;
+    std::vector<std::string> options;
 
     Location(std::string name, std::string description);
 
 
     void describe() const; // removed location:: 
+    void addOption(const std::string& option);
+    void showOptions() const;           // prints a)/b)/c)/... and "x) back"
     virtual ~Location() = default;
 };
 
