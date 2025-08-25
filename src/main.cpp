@@ -73,7 +73,7 @@ int main(){
             string userChoice;
             cout << "Who do you want to talk to? (Lenora/Alexander/Celeste/Alfred/Dante/Jellal): ";
             getline(cin, userChoice);
-            game.talkToSuspect(userChoice); // dynamically fetch from suspects vector
+            //game.talkToSuspect(userChoice); // dynamically fetch from suspects vector
         }
 
         // ----------------- Review clues -----------------
