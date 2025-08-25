@@ -59,11 +59,14 @@ int main(){
 
     while (running) {
         cout << "\n=== What would you like to do? ===\n";
+        cout << endl;
         cout << "A) Go to Foyer\nB) Go to Bedroom\nC) Go to Kitchen\n";
         cout << "D) Go to Office\nE) Go to Library\nF) Talk to Suspects\n";
         cout << "Q) Quit\n";
+        cout << endl;
         cout << "Enter your choice: ";
         getline(cin, choice);
+        cout << endl;
 
         //  movement 
         if (choice == "A" || choice == "a") game.move("a");
