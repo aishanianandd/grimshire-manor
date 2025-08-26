@@ -21,28 +21,24 @@ void Game::printIntroduction() {
     std::cout << std::endl;
     // printing the introduction
     type("\033[3mAh yes… the Grimshires.\n");
-    type("The most prestigious family in the nation—wealthy, influential, adored by high society.\n");
-    type("Their manor stood as a beacon of elegance, a place where laughter and luxury seemed endless.\n\n");
+    type("The most prestigious family in the nation—wealthy, influential, admired by all.\n");
+    type("Their manor once stood as a beacon of wealth and luxury.\n\n");
 
-    type("But behind the crystal chandeliers and polished marble floors,\n");
-    type("not everything was as perfect as it appeared.\n");
-    type("Whispers of betrayal… shadows of resentment… unspoken grudges buried deep.\n\n");
-
-    type("And tonight, those whispers would finally turn into something far darker.\n\n");
-
-    type("Now the manor trembles with unease.\n");
-    type("Every smile feels rehearsed. Every alibi feels fragile.\n");
-    type("The truth hides among liars… and only one person can uncover it.\n\n");
+    type("But now, tragedy has struck.\n");
+    type("Damian Grimshire, the head of the family, was found dead yesterday evening.\n\n");
 
     type("You have been chosen as the lead detective in this case.\n");
     type("The lives, the lies, the legacy of the Grimshires now rest in your hands.\n\n");
 
-    type("Tell me, detective... are you ready to face what waits in the dark?\033[0m\n\n");
+    type("Tell me, detective… are you ready to face what awaits in the dark?\033[0m\n\n");
+
 
     std::cout << "\033[38;2;255;0;0m";
-    std::cout << "|=================================================|\n";
-    std::cout << "|            THE GRIMSHIRE MANOR MURDER           |\n";
-    std::cout << "|=================================================|\n";
+    std::cout << "|═════════════════════⊹⊱≼≽⊰⊹═════════════════════|\n";
+    std::cout << endl;
+    std::cout << "            THE GRIMSHIRE MANOR MURDER            \n";
+    std::cout << endl;
+    std::cout << "|═════════════════════⊹⊱≼≽⊰⊹═════════════════════|\n";
     std::cout << "\033[0m";  // reset
     std::cout << std::endl;
 
@@ -168,20 +164,22 @@ void Game::TalkToSuspect(Suspect& suspect) {
     std::cout << "\nAlibi: " << suspect.getAlibi() << std::endl; 
 }
 void Game::printSuspectIntroduction() {
-    std::cout << "--------------------------------------------" << endl;
+    std::cout << "-----------------------------------" << endl;
     
     static constexpr const char* POLICE = R"POLICE(
-                              ,
-                     __  _.-"` `'-.
-                    /||\'._ __{}_(
-                    ||||  |'--.__\
-                    |  L.(   ^_\^
-                    \ .-' |   _ |
-                    | |   )\___/
-                    |  \-'`:._]
-                    \__/;      '-.
+                 ,
+        __  _.-"` `'-.
+       /||\'._ __{}_(
+       ||||  |'--.__\
+       |  L.(   ^_\^
+       \ .-' |   _ |
+       | |   )\___/
+       |  \-'`:._]
+       \__/;      '-.
 
---- The Police Station ---
+━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━
+       The Police Station 
+━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━
 
 You arrive at the station where the main suspects await questioning.
 Interview anyone in any order. (Q to quit)
