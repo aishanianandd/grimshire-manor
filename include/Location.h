@@ -15,7 +15,6 @@ class Location {
     void addOption(const std::string& option);
     void showOptions();           // prints a)/b)/c)/... and "x) back"
     void showLocationOptions();
-    virtual ~Location() = default;
     void interact();
 };
 
