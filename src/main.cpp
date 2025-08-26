@@ -152,7 +152,7 @@ int main(){
                 else if (userChoice == 'e') {
                     game.TalkToSuspect(Alfred);
                 }
-                else {
+                else if (userChoice == 'f'){
                     game.TalkToSuspect(Dante);
             }    //stores player's selection
         }
