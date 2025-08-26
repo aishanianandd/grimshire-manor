@@ -6,13 +6,15 @@ class Location {
     std::string name;
     std::string description;
     std::vector<std::string> options;
+    std::string menuChoice;
 
     Location(std::string name, std::string description);
 
 
     void describe() const; // removed location:: 
     void addOption(const std::string& option);
-    void showOptions() const;           // prints a)/b)/c)/... and "x) back"
+    void showOptions();           // prints a)/b)/c)/... and "x) back"
+    void showLocationOptions();
     virtual ~Location() = default;
 };
 
