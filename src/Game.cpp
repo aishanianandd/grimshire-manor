@@ -21,12 +21,25 @@ void Game::printIntroduction() {
     std::cout << std::endl;
     // printing the introduction
     type("\033[3mAh yes… the Grimshires.\n");
-    type("The most prestigious family in the nation—wealthy, influential, admired by all.\n");
-    type("Their manor once stood as a beacon of wealth and luxury.\n\n");
+    type("Once a family of elegance and renown, their halls echoed with laughter, music, and champagne.\n\n");
 
-    type("But now, tragedy has struck.\n");
-    type("Damian Grimshire, the head of the family, was found dead yesterday evening.\n\n");
+    type("...but all that grandeur has been tainted.\n");
+    type("Last night, tragedy struck.\n");
+    type("Damian Grimshire, the head of the family and host of the party, was discovered lifeless at the bottom of the grand staircase.\n");  
+    type("The official word? A drunken stumble, a fatal fall down the staricase at precisely 3:17 AM.\n\n");
+    const char* DUDE = 
+    R"DUDE(
+       ○ 
+    く|)へ
+        〉          
+    ￣￣┗┓             
+    ￣￣￣┗┓
+    ￣￣￣￣┗┓
+    ￣￣￣￣￣┗┓
+    )DUDE";
+    std::cout << DUDE << std::endl;
 
+    type("But you should know… nothing in this manor can ever be that simple.\n");
     type("You have been chosen as the lead detective in this case.\n");
     type("The lives, the lies, the legacy of the Grimshires now rest in your hands.\n\n");
 
