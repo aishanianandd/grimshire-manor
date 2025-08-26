@@ -22,7 +22,7 @@ int main(){
 
 
     // ask the player a question
-    type("Are you up to the task, \033[1mDetective " + game.getName() + "\033[0m?\n\n");
+    type("Are you up to the task, \033[1mDetective " + game.getName() + "\033[0m? (¬‿¬)\n\n");
     cout << "A) Yes\nB) No\n";
     cout << endl;
     cout << "Enter your choice: ";
@@ -44,7 +44,7 @@ int main(){
         } else if(choice == "b" || choice == "B" || choice == "no" || choice == "No") {
             choiceMade = true;
             type("\n\033[3m…Ah. Perhaps the weight of the Grimshire legacy is too much for one soul to bear.\n");
-            type("But justice waits for no one, detective.\n");
+            type("But justice waits for no one, detective ( o_o) \n");
             type("When you are ready… the manor will still be here.\033[0m\n");
             running = false;
         } else {
@@ -160,6 +160,19 @@ int main(){
         } else if (choice == "Q" || choice == "q") {
             cout << "\n\033[3mReally? Quitting? The case isn’t going to solve itself, \033[1mDetective " + game.getName() + "...\033[0m\n";
             cout << "\033[3m...Fine. Exiting the game. The murderer wins this round.\033[0m\n";
+            cout << R"ASCII(
+⠀⠀⠀⠀⢀⣀⣤⣤⣤⣤⣄⡀⠀⠀⠀⠀
+⠀⢀⣤⣾⣿⣾⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀
+⢠⣾⣿⢛⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀
+⣾⣯⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⡿⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠻⢿⡵
+⣿⡇⠀⠀⠉⠛⠛⣿⣿⠛⠛⠉⠀⠀⣿⡇
+⣿⣿⣀⠀⢀⣠⣴⡇⠹⣦⣄⡀⠀⣠⣿⡇
+⠋⠻⠿⠿⣟⣿⣿⣦⣤⣼⣿⣿⠿⠿⠟⠀
+⠀⠀⠀⠀⠸⡿⣿⣿⢿⡿⢿⠇⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠈⠁⠈⠁⠀⠀⠀⠀⠀⠀
+         )ASCII";
             running = false;
         }
 
