@@ -274,7 +274,7 @@ void Game::printSuspectIntroduction() {
                     "\tStill, I would never harm him. He had many enemies, Detective.\033[0m\n\n", 15);
 
                 std::cout << "\033[1;31m"   // bold red
-                    << "============ INTERVIEW END ============"
+                    << "============= INTERVIEW END ============="
                     << "\033[0m\n\n";
 
             break;
