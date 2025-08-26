@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cctype> 
 #include "Location.h" 
 
 Location::Location(std::string n, std::string d) :
@@ -19,9 +20,17 @@ void Location::showOptions() {
     }
     std::cout << "x) back\n";
 
-    std::string choice;
-    std::cin >> choice;
-    menuChoice = choice;
+    std::string line;
+    std::getline(std::cin, line);           // always use getline
+
+    if (line.empty()) {
+        menuChoice = " ";                   // default if user just hits Enter
+    } else {
+        // take first character, lowercase it safely, store as 1-char string
+        unsigned char uc = static_cast<unsigned char>(line[0]);
+        char lower = static_cast<char>(std::tolower(uc));
+        menuChoice = std::string(1, lower);
+    }
 }
 
 void Location::showLocationOptions() {
@@ -33,6 +42,17 @@ void Location::showLocationOptions() {
                             "Grimshire speaking in a low voice to one of her friends near the foyer. "
                             "She said something like, ‘If he thinks he can humiliate me and get away with it, "
                             "he’s mistaken.’ I didn’t stay to listen — it sounded… personal.\n";
+        } else {
+            std::cout << "Nothing more to see here.\n";
+        }
+    } else if (name == "Bedroom") {
+        if (menuChoice == "a") {
+            std::cout << "You find that the bookmark stuck in the book is only on page 2...Hm, Lenora must be a very slow reader..." << std::endl;
+        } else if (menuChoice == "b") {
+            std::cout << "I was on my way to tend to my usual cleaning duties when I noticed Mr. Grimshire in the upstairs hallway. "
+                            "He looked… strange — pale, unsteady on his feet, and clutching at the wall like he might fall. "
+                            "I asked if he was alright, but he just waved me off without a word and kept moving toward the staircase. "
+                            "Something was off though, his steps were slow… almost dragging, like he was dizzy or in pain.\n";
         } else {
             std::cout << "Nothing more to see here.\n";
         }

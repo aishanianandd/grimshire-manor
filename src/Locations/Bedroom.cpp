@@ -5,5 +5,5 @@ Bedroom::Bedroom() : Location(
     "A quiet, perfumed room. A novel rests on the nightstand with the bookmark stuck on page 2.\n"
 ) {
     addOption("Investigate the staircase");
-    addOption("Talk to NPC #1");
+    addOption("Talk to the maid");
 }
