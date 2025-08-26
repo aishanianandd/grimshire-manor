@@ -1,22 +1,20 @@
-#ifndef SUSPECT_H
-#define SUSPECT_H
-
+#pragma once
 #include <string>
 
 class Suspect {
-	public:
-		Suspect(const std::string name,
-						   const std::string description,
-						   const std::string alibi);		//constructor
-
-		std::string getName() const;				//returns NPC name
-		std::string getDescription() const;			//returns when player selects "talk"
-		std::string getAlibi() const;				//returns when player selects "question"
-		void TalkToSuspect(const Suspect& suspect) const;
 	private:
 		std::string name;
 		std::string description;
 		std::string alibi;
-};
 
-#endif
+	public:
+		Suspect(const std::string& name,
+				const std::string& description,
+				const std::string& alibi);
+
+		const std::string& getName() const noexcept;        // npc name
+		const std::string& getDescription() const noexcept; // shows when player selects "talk"
+		const std::string& getAlibi() const noexcept;       // shows when player selects "question"
+
+		void talkToSuspect(const Suspect& suspect) const;   // interaction with another suspect (to be implemented)
+};

@@ -1,18 +1,25 @@
 #include "Suspect.h"
-#include <string>
 #include <iostream>
 
-Suspect::Suspect(std::string n, std::string d, std::string a) 
-    : name(n), description(d), alibi(a) {}
+Suspect::Suspect(const std::string& name,
+                 const std::string& description,
+                 const std::string& alibi)
+    : name(name), description(description), alibi(alibi) {}
 
-std::string Suspect::getName() const {
+const std::string& Suspect::getName() const noexcept {
     return name;
 }
 
-std::string Suspect::getDescription() const {
+const std::string& Suspect::getDescription() const noexcept {
     return description;
 }
 
-std::string Suspect::getAlibi() const {
+const std::string& Suspect::getAlibi() const noexcept {
     return alibi;
+}
+
+void Suspect::talkToSuspect(const Suspect& suspect) const {
+    std::cout << "\nName: " << suspect.getName() << '\n'
+              << "Description: " << suspect.getDescription() << '\n'
+              << "Alibi: " << suspect.getAlibi() << "\n\n";
 }
