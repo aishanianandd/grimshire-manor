@@ -18,7 +18,7 @@ void Game::printIntroduction() {
     type(MANSION, 2);
     std::cout << std::endl;
     // printing the introduction
-    type("Ah yes… the Grimshires.\n");
+    type("\033[3mAh yes… the Grimshires.\n");
     type("The most prestigious family in the nation—wealthy, influential, adored by high society.\n");
     type("Their manor stood as a beacon of elegance, a place where laughter and luxury seemed endless.\n\n");
 
@@ -35,7 +35,7 @@ void Game::printIntroduction() {
     type("You have been chosen as the lead detective in this case.\n");
     type("The lives, the lies, the legacy of the Grimshires now rest in your hands.\n\n");
 
-    type("Tell me, detective—are you ready to face what waits in the dark?\n\n");
+    type("Tell me, detective... are you ready to face what waits in the dark?\033[0m\n\n");
 
     // aurafull title box in darker red
     type("\033[1;38;5;160m|=================================================|\033[0m\n", 2);

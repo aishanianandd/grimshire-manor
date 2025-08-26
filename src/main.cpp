@@ -17,11 +17,12 @@ int main(){
     string name;
     type("Enter your name: ");
     getline(cin, name);
+    cout << endl;
     game.setName(name);
 
 
     // ask the player a question
-    type("Are you up to the task, detective " + game.getName() + "?\n\n");
+    type("Are you up to the task, \033[1mDetective " + game.getName() + "\033[0m?\n\n");
     cout << "A) Yes\nB) No\n";
     cout << endl;
     cout << "Enter your choice: ";
@@ -35,21 +36,21 @@ int main(){
         getline(cin, choice);
         if(choice == "a" || choice == "A" || choice == "yes" || choice == "Yes") {
             choiceMade = true;
-            type("\nVery Well. The fate of the investigation now rests with you, " + game.getName() + ".\n");
+            type("\n\033[3mVery Well. The fate of the investigation now rests with you, " + game.getName() + ".\n");
             type("Tread carefully… every word, every glance, every clue matters.\n");
-            type("Let us begin.\n");
+            type("Let us begin.\033[0m\n");
             running = true;
         } else if(choice == "b" || choice == "B" || choice == "no" || choice == "No") {
             choiceMade = true;
-            type("\n…Ah. Perhaps the weight of the Grimshire legacy is too much for one soul to bear.\n");
+            type("\n\033[3m…Ah. Perhaps the weight of the Grimshire legacy is too much for one soul to bear.\n");
             type("But justice waits for no one, detective.\n");
-            type("When you are ready… the manor will still be here.\n");
+            type("When you are ready… the manor will still be here.\033[0m\n");
             running = false;
         } else {
             choiceMade = false;
-            type("\nI didn’t quite catch that…\n");
+            type("\n\033[3mI didn’t quite catch that…\n");
             type("Is it a yes… or a no, detective?\n");
-            type("The Grimshires don’t take kindly to indecision…\n");
+            type("The Grimshires don’t take kindly to indecision…\033[0m\n");
             cout << endl;
             cout << "Enter your choice: ";
         }
@@ -152,12 +153,21 @@ int main(){
             }    //stores player's selection
         }
         else if (choice == "Q" || choice == "q") {
-            cout << "Exiting the game. Goodbye!\n";
+            cout << "\033[3mReally? Quitting? The case isn’t going to solve itself, \033[1mDetective " + game.getName() + "...\033[0m\n";
+            cout << "\033[3mFine. Exiting the game. The murderer wins this round.\033[0m\n";
             running = false;
         }
 
         //  invalid input
         else cout << "Invalid choice. Try again.\n";
     }
+
+    std::cout << "\n";
+    std::cout << "\033[1;31m"; // bold red
+    std::cout << "=====================================\n";
+    std::cout << "              END GAME                \n";
+    std::cout << "=====================================\n";
+    std::cout << "\033[0m\n"; 
+
     return 0;
 }
