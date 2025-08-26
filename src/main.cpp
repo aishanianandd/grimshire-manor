@@ -106,7 +106,7 @@ int main(){
     cout << endl;
     
     // start game loop
-    
+
     // first starts with suspect interviews at police station
     game.printSuspectIntroduction();
 
@@ -121,8 +121,11 @@ int main(){
         cout << "Q) Quit\n";
         cout << endl;
         cout << "Enter your choice: ";
-        getline(cin, choice);
-        cout << endl;
+        std::cout << "Enter your choice: ";
+        std::getline(std::cin, choice);
+        if (!choice.empty()) {
+            choice = std::string(1, std::tolower(choice[0]));
+        }
 
         //  movement 
         if (choice == "A" || choice == "a") game.move("a");

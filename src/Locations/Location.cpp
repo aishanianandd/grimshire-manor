@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cctype> 
 #include "Location.h" 
 
 Location::Location(std::string n, std::string d) :
@@ -19,9 +20,17 @@ void Location::showOptions() {
     }
     std::cout << "x) back\n";
 
-    std::string choice;
-    std::cin >> choice;
-    menuChoice = choice;
+    std::string line;
+    std::getline(std::cin, line);           // always use getline
+
+    if (line.empty()) {
+        menuChoice = " ";                   // default if user just hits Enter
+    } else {
+        // take first character, lowercase it safely, store as 1-char string
+        unsigned char uc = static_cast<unsigned char>(line[0]);
+        char lower = static_cast<char>(std::tolower(uc));
+        menuChoice = std::string(1, lower);
+    }
 }
 
 void Location::showLocationOptions() {
