@@ -47,5 +47,43 @@ void Location::showLocationOptions() {
         } else {
             std::cout << "Nothing more to see here.\n";
         }
+    } else if (name == "Kitchen") {
+        if (menuChoice == "a") {
+            std::cout << "The bottom shelf seems to be missing a bottle of rat poison" << std::endl;
+        } else if (menuChoice == "b") {
+            std::cout << "The letter is from Damian addressed to Dante the chef:" 
+                " Stay away from my daughter. You will never marry her! " << std::endl;
+        } else if (menuChoice == "c") {
+            std::cout << "“I saw Miss Celeste helping Chef Dante with drinks. "
+                " Strange, since she never does that… and there was this  bitter chemical-like smell in the air as well." << std::endl;
+        } else {
+            std::cout << "Nothing more to see here.\n";
+        }
+    } else if (name == "Office") {
+        if (menuChoice == "a") {
+            std::cout << "There's a photograph of Damian and Jellal's wife in an intimate pose" << std::endl;
+        } else if (menuChoice == "b") {
+            std::cout << "The sticky note in Damian's handwriting reads:"
+                "Call Marcus regarding Celeste's arranged marriage to the Ackerman heir.\n";
+        } else if (menuChoice == "c") {
+            std::cout << "You notice a lock of dark brown hair caught on the back of Damian's chair.\n";
+        } else if (menuChoice == "d") {
+            std::cout << "I was dusting in the hall outside this office earlier, just before everything happened.\n"
+                "I heard Mr. Grimshire talking quietly to someone, then the sound of glass tapping on wood.\n";
+                "Then there was this strange sound… like glass tapping on wood.\n";
+                "A moment later, I caught a faint, sharp smell — not wine or alcohol, but something bitter, almost metallic.\n";
+        } else {
+            std::cout << "Nothing more to see here.\n";
+    }
+    } else if (name == "Library") {
+        if (menuChoice == "a") {
+            std::cout << "A threatening letter is crumpled up between the firewood: "
+                "give me what I want unless you want them all to find out” -A.C.\n";
+        } else if (menuChoice == "b") {
+            std::cout << "You find a folded bank notice with Alexander Grimshire's account completely empty and in debt." << std::endl;
+            std::cout << "He must be really desperate for money right now." << std::endl;
+        } else {
+            std::cout << "Nothing more to see here.\n";
+    }
     }
 }

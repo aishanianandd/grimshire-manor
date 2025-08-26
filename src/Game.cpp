@@ -80,6 +80,7 @@ bool Game::move(const std::string& choice) {
     // Show room description
     currentLocation_->describe();
 
+
     // Show room options (this prints a), b), etc.)
     currentLocation_->showOptions();
 

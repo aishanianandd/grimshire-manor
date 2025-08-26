@@ -5,7 +5,6 @@ Library::Library()
     "Library",
     "Dusty shelves and a cold hearth. Ash clings inside the fireplace; a side table holds scattered papers.\n"
 ) {
-    addOption("Investigate the fireplace (crumbled note)");
-    addOption("Inspect the side table (bank notice)");
-    addOption("Talk to NPC #1");
+    addOption("Investigate the fireplace");
+    addOption("Inspect the side table");
 }
