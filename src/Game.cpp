@@ -3,6 +3,7 @@
 #include "Suspect.h"
 #include "Type.h"
 
+using namespace std;
 
 void Game::printIntroduction() {
     const char* MANSION = "\033[38;2;255;0;0m"
