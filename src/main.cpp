@@ -101,7 +101,6 @@ int main(){
     );
 
 
-
     // start game loop
     
     cout << endl;

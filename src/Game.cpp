@@ -83,18 +83,8 @@ bool Game::move(const std::string& choice) {
     // Show room options (this prints a), b), etc.)
     currentLocation_->showOptions();
 
-    // Example: read player choice inside this loop
-    char c;
-    std::cin >> c;
-
-    int idx = c - 'a';
-    if (idx >= 0 && idx < (int)currentLocation_->options.size()) {
-        std::cout << "You chose: " << currentLocation_->options[idx] << "\n";
-    } else if (c == 'x') {
-        std::cout << "Leaving the " << currentLocation_->name << ".\n";
-    } else {
-        std::cout << "Invalid choice.\n";
-    }
+    // show menu options after selecting a location
+    currentLocation_->showLocationOptions();
 
     return true;
 }
@@ -102,7 +92,7 @@ bool Game::move(const std::string& choice) {
 
 
 // clues #5 
- void Game::addClue(const Clue& c) {
+void Game::addClue(const Clue& c) {
     for (const auto& clue : clues) {
         if (clue.getName() == c.getName()) return; // already found
     }
@@ -141,52 +131,6 @@ void Game::reviewStatements() const {
     }
     std::cout << "========================\n";
 } // these work like clues but store npc dialogue 
-
-void Game::visit(Location& room) {
-    room.describe();
-
-    while (true) {
-        room.showOptions();              // prints a), b), ..., x) back, then "> "
-        char c;
-        std::cin >> c;
-
-        if (c == 'x') break;             // leave the room
-
-        int idx = c - 'a';               // map 'a' -> 0, 'b' -> 1, ...
-        if (idx < 0 || idx >= (int)room.options.size()) {
-            std::cout << "Invalid choice.\n";
-            continue;
-        }
-
-        // For now: generic feedback. You can replace with per-room logic below.
-        std::cout << "You chose: " << room.options[idx] << "\n";
-
-        // --- optional: per-room outcomes ---
-        if (room.name == "Foyer") {
-            if (idx == 0) std::cout << "You find tiny shards near the steps.\n";
-            if (idx == 1) std::cout << "The latch is set from the inside.\n";
-            if (idx == 2) std::cout << "Faint scuff marks lead toward the hall.\n";
-        } else if (room.name == "Library") {
-            if (idx == 0) std::cout << "Crumbled note in ash: \"give me what I want... -A.C.\"\n";
-            if (idx == 1) std::cout << "Bank notice: Alexander’s account is nearly empty.\n";
-        } else if (room.name == "Kitchen") {
-            if (idx == 0) std::cout << "Pantry: rat poison bottle is missing.\n";
-            if (idx == 1) std::cout << "Letter from Damian to Dante: \"Stay away from my daughter.\"\n";
-            if (idx == 2) std::cout << "Servant: \"Celeste helped with drinks; bitter smell lingered.\"\n";
-        } else if (room.name == "Office") {
-            if (idx == 0) std::cout << "Drawer: photo of Damian and Mrs. Vexley.\n";
-            if (idx == 1) std::cout << "Sticky note: \"Call Marcus re: Celeste’s arranged marriage.\"\n";
-            if (idx == 2) std::cout << "Chair: a lock of dark brown hair.\n";
-            if (idx == 3) std::cout << "Maid: heard glass tapping; bitter, metallic smell.\n";
-        } else if (room.name == "Bedroom") {
-            if (idx == 0) std::cout << "Staircase: heavy, uneven steps scuffed the runner.\n";
-            if (idx == 1) std::cout << "NPC: \"He looked pale, unsteady—clutching the wall.\"\n";
-        }
-        // -----------------------------------
-
-        std::cout << "\n";
-    }
-}
 
 char Game::TalkOptions() {
     while (true) {
