@@ -58,7 +58,7 @@ int main(){
     }
 
 
-
+    // ignore the 2nd line for all of these (that's not being printed out but can't be deleted rn either lol) 
     Suspect Lenora(
         "Lenora Grimshire",
         "is an elegant woman in her early 50s. She has smooth chestnut-brown hair pinned up neatly with sparkling diamond clips. Her blue silk gown matches her sharp green eyes, and she wears long satin gloves. She moves gracefully, always with perfect posture.",
@@ -117,7 +117,7 @@ int main(){
         cout << "\n=== What would you like to do? ===\n";
         cout << endl;
         cout << "A) Go to Foyer\nB) Go to Bedroom\nC) Go to Kitchen\n";
-        cout << "D) Go to Office\nE) Go to Library\nF) Talk to Suspects\n";
+        cout << "D) Go to Office\nE) Go to Library\nF) Review Suspects\n";
         cout << "Q) Quit\n";
         cout << endl;
         cout << "Enter your choice: ";
