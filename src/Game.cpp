@@ -350,10 +350,10 @@ bool Game::accuseSuspect(){
 
     // Decide win/lose
     if (accused == TRUE_KILLER) {
-        std::cout << "\033[1;32mYour accusation rings true. Justice is served.\033[0m\n";
+        std::cout << "\033[1;32mYour accusation rings true. Justice is served \\( ﾟヮﾟ)/\033[0m\n";
         return true;   // end game (success)
     } else {
-        std::cout << "\033[1;31mYour accusation fails. The killer smiles.\033[0m\n";
+        std::cout << "\033[1;31mYour accusation fails. The killer smiles (≖_≖ )\033[0m\n";
         return true;   // end game (failure)
     }
 }
