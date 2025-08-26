@@ -36,5 +36,16 @@ void Location::showLocationOptions() {
         } else {
             std::cout << "Nothing more to see here.\n";
         }
+    } else if (name == "Bedroom") {
+        if (menuChoice == "a") {
+            std::cout << "You find that the bookmark stuck in the book is only on page 2...Hm, Lenora must be a very slow reader..." << std::endl;
+        } else if (menuChoice == "b") {
+            std::cout << "I was on my way to tend to my usual cleaning duties when I noticed Mr. Grimshire in the upstairs hallway. "
+                            "He looked… strange — pale, unsteady on his feet, and clutching at the wall like he might fall. "
+                            "I asked if he was alright, but he just waved me off without a word and kept moving toward the staircase. "
+                            "Something was off though, his steps were slow… almost dragging, like he was dizzy or in pain.\n";
+        } else {
+            std::cout << "Nothing more to see here.\n";
+        }
     }
 }
