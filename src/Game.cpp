@@ -247,17 +247,17 @@ void Game::printSuspectIntroduction() {
 
                 std::cout << "\033[1mSuspect:\033[0m Lenora Grimshire\n\n";
 
-                // bold + italicized description
+                // appearance
                 type("\033[1mAppearance:\033[0m \033[3mAn elegant woman in her early 50s. She has smooth chestnut-brown hair\n"
                     "\t    pinned up neatly with sparkling diamond clips. \n"
                     "\t    Her blue silk gown matches her sharp green eyes, and she wears long satin gloves.\n"
                     "\t    She moves gracefully, always with perfect posture.\033[0m\n\n", 15);
 
                 std::cout << "\033[1;36m"
-                        << "================ INTERVIEW ================"
+                        << "=============== INTERVIEW ==============="
                         << "\033[0m\n\n";
 
-                type("\033[1mDetective:\033[0m \033[3mMrs. Grimshire, where were you last night?\033[0m\n\n", 15);
+                type("\033[1;34mDetective:\033[0m \033[3mMrs. Grimshire, where were you last night?\033[0m\n\n", 15);
 
                 type("\033[1mLenora:\033[0m \033[3mAfter I’d greeted everyone and made my rounds in the ballroom,\n"
                     "\tI began to feel a bit lightheaded… too much champagne, perhaps. \n"
@@ -268,13 +268,16 @@ void Game::printSuspectIntroduction() {
                     "\tThe next thing I remember was waking to shouting in the hall… \n"
                     "\tit was all so sudden and dreadful.\033[0m\n\n", 15);
 
-                type("\033[1mDetective:\033[0m \033[3mDid you and Damian argue that night?\033[0m\n\n", 15);
+                type("\033[1;34mDetective:\033[0m \033[3mDid you and Damian argue that night?\033[0m\n\n", 15);
 
                 type("\033[1mLenora:\033[0m \033[3mYes… but only briefly, about his… behavior. \n"
                     "\tStill, I would never harm him. He had many enemies, Detective.\033[0m\n\n", 15);
 
-                std::cout << "=========================================\n\n";
-             break;
+                std::cout << "\033[1;31m"   // bold red
+                    << "============ INTERVIEW END ============"
+                    << "\033[0m\n\n";
+
+            break;
 
             case 'b':
                 cout << "[Jellal Vexley]:\n\n"
