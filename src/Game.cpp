@@ -5,7 +5,7 @@
 
 
 void Game::printIntroduction() {
-    const char* MANSION = "\033[38;2;220;20;60m"
+    const char* MANSION = "\033[38;2;255;0;0m"
      R"MANSION( 
       `'::::.
         _____A_
@@ -39,10 +39,13 @@ void Game::printIntroduction() {
 
     type("Tell me, detective... are you ready to face what waits in the dark?\033[0m\n\n");
 
-    // aurafull title box in darker red
-    type("\033[1;38;2;220;20;60m|=================================================|\n", 2);
-    type("|            THE GRIMSHIRE MANOR MURDER           |\n", 2);
-    type("|=================================================|\033[0m\n\n", 2);
+    std::cout << "\033[38;2;255;0;0m";
+    std::cout << "|=================================================|\n";
+    std::cout << "|            THE GRIMSHIRE MANOR MURDER           |\n";
+    std::cout << "|=================================================|\n";
+    std::cout << "\033[0m";  // reset
+    std::cout << std::endl;
+
 
 
 
