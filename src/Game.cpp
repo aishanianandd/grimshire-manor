@@ -57,6 +57,12 @@ string Game::getName(){
     return name;
 }
 
+// destructor added to free dynamically allocated memory 
+Game::~Game() {
+    delete currentLocation_;
+    currentLocation_ = nullptr;
+}
+
 
 bool Game::move(const std::string& choice) {
     // Free the old room
