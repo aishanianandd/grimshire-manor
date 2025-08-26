@@ -78,8 +78,8 @@ void Location::showLocationOptions() {
             std::cout << "You notice a lock of dark brown hair caught on the back of Damian's chair.\n";
         } else if (menuChoice == "d") {
             std::cout << "I was dusting in the hall outside this office earlier, just before everything happened.\n"
-                "I heard Mr. Grimshire talking quietly to someone, then the sound of glass tapping on wood.\n";
-                "Then there was this strange sound… like glass tapping on wood.\n";
+                "I heard Mr. Grimshire talking quietly to someone, then the sound of glass tapping on wood.\n"
+                "Then there was this strange sound… like glass tapping on wood.\n"
                 "A moment later, I caught a faint, sharp smell — not wine or alcohol, but something bitter, almost metallic.\n";
         } else {
             std::cout << "Nothing more to see here.\n";

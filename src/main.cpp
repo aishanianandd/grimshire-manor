@@ -118,7 +118,6 @@ int main(){
         cout << "D) Go to Office\nE) Go to Library\nF) Review Suspects\n";
         cout << "Q) Quit\n";
         cout << endl;
-        cout << "Enter your choice: ";
         std::cout << "Enter your choice: ";
         std::getline(std::cin, choice);
         if (!choice.empty()) {
