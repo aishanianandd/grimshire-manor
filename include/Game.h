@@ -20,6 +20,8 @@ class Game {
         vector<string> heardStatements;  // to store statements (#12)
         Location* currentLocation_ = nullptr;
 
+        // dun dun dun.. the killer
+        const std::string TRUE_KILLER = "Celeste Grimshire";  // <- change later if you want
 
     public:
     // helpers
@@ -34,7 +36,6 @@ class Game {
         // movements 
         bool move(const std::string& roomName);
 
-
         // find room by name 
         Location* findRoom(const std::string& roomName) const;
         void visit(Location& room);
@@ -42,6 +43,9 @@ class Game {
         // sets name
         void setName(const string& n);
         string getName();
+
+        // accuse suspect
+        bool accuseSuspect();
 
         // describes current loc
         void describe() const;
