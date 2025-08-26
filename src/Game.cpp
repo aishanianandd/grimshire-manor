@@ -285,3 +285,48 @@ void Game::printSuspectIntroduction() {
     }
 }
 
+bool Game::accuseSuspect(){
+
+    // ----------------- Accuse Suspect -----------------
+    std::cout << "\n\033[1;38;5;208m=== Make Your Accusation ===\033[0m\n\n";
+    std::cout << "Who do you accuse of murdering Damian Grimshire?\n\n";
+    std::cout << "A) Lenora Grimshire (Wife)\n";
+    std::cout << "B) Jellal Vexley (Best Friend)\n";
+    std::cout << "C) Alexander Grimshire (Son)\n";
+    std::cout << "D) Celeste Grimshire (Daughter)\n";
+    std::cout << "E) Alfred Crane (Butler)\n";
+    std::cout << "F) Dante Vermillion (Chef)\n";
+    std::cout << "Q) Cancel accusation\n\n";
+
+    std::cout << "Enter your choice: ";
+    std::string acc; std::getline(std::cin, acc);
+    if (!acc.empty()) acc = std::string(1, std::tolower(acc[0]));
+
+    std::string accused;
+    switch (!acc.empty() ? acc[0] : '\0') {
+        case 'a': accused = "Lenora Grimshire"; break;
+        case 'b': accused = "Jellal Vexley";     break;
+        case 'c': accused = "Alexander Grimshire"; break;
+        case 'd': accused = "Celeste Grimshire"; break;
+        case 'e': accused = "Alfred Crane";      break;
+        case 'f': accused = "Dante Vermillion";  break;
+        case 'q': std::cout << "You holster your accusation… for now.\n"; return false;
+        default:  std::cout << "Invalid choice. Accusation cancelled.\n";  return false;
+    }
+
+    std::cout << "\n\033[1mYou are accusing:\033[0m " << accused << "\n";
+    std::cout << "Are you sure? (y/n): ";
+    std::string yn; std::getline(std::cin, yn);
+    if (!yn.empty()) yn = std::string(1, std::tolower(yn[0]));
+    if (yn != "y") { std::cout << "You decide to gather more evidence first.\n"; return false; }
+
+    // Decide win/lose
+    constexpr const char* TRUE_KILLER = "Lenora Grimshire"; // or wherever you keep this
+    if (accused == TRUE_KILLER) {
+        std::cout << "\033[1;32mYour accusation rings true. Justice is served.\033[0m\n";
+        return true;   // end game (success)
+    } else {
+        std::cout << "\033[1;31mYour accusation fails. The killer smiles.\033[0m\n";
+        return true;   // end game (failure)
+    }
+}
