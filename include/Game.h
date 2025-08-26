@@ -13,9 +13,10 @@ using std::string;
 class Game {
     private: 
         bool running;
+        string name;
 
-        std::vector<Character> suspects;    // character.h to be implemented
-        std::vector<Clue> clues;            // clue.h to be implemented
+        vector<Character> suspects;    // character.h to be implemented
+        vector<Clue> clues;            // clue.h to be implemented
         vector<string> heardStatements;  // to store statements (#12)
         Location* currentLocation_ = nullptr;
 
@@ -38,7 +39,9 @@ class Game {
         Location* findRoom(const std::string& roomName) const;
         void visit(Location& room);
 
-
+        // sets name
+        void setName(const string& n);
+        string getName();
 
         // describes current loc
         void describe() const;

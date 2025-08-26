@@ -14,9 +14,14 @@ int main(){
     Game game;
     game.printIntroduction();
     
+    string name;
+    type("Enter your name: ");
+    getline(cin, name);
+    game.setName(name);
+
 
     // ask the player a question
-    type("Are you up to the task, detective?\n\n");
+    type("Are you up to the task, detective " + game.getName() + "?\n\n");
     cout << "A) Yes\nB) No\n";
     cout << endl;
     cout << "Enter your choice: ";
@@ -30,7 +35,7 @@ int main(){
         getline(cin, choice);
         if(choice == "a" || choice == "A" || choice == "yes" || choice == "Yes") {
             choiceMade = true;
-            type("\nVery Well. The fate of the investigation now rests with you.\n");
+            type("\nVery Well. The fate of the investigation now rests with you, " + game.getName() + ".\n");
             type("Tread carefully… every word, every glance, every clue matters.\n");
             type("Let us begin.\n");
             running = true;
@@ -49,6 +54,8 @@ int main(){
             cout << "Enter your choice: ";
         }
     }
+
+
 
     Suspect Lenora(
         "Lenora Grimshire",

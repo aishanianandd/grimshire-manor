@@ -43,6 +43,17 @@ void Game::printIntroduction() {
     type("|=================================================|\n\n", 2);
 }
 
+// user's name
+void Game::setName(const string& n){
+    name = n;
+}
+
+// retrieves user name
+string Game::getName(){
+    return name;
+}
+
+
 bool Game::move(const std::string& choice) {
     // Free the old room
     delete currentLocation_;
@@ -212,7 +223,7 @@ void Game::printSuspectIntroduction() {
 
     bool interviewing = true;
     while (interviewing) {
-        std::cout << "Who would you like to interview?\n"
+        std::cout << "Who would you like to interview?\n\n"
                      "A) Lenora Grimshire (Wife)\n"
                      "B) Jellal Vexley (Best Friend)\n"
                      "C) Alexander Grimshire (Son)\n"
@@ -220,6 +231,7 @@ void Game::printSuspectIntroduction() {
                      "E) Alfred Crane (Butler)\n"
                      "F) Dante Vermillion (Chef)\n"
                      "Q) Quit questioning\n"
+                     << endl <<
                      "Enter your choice: ";
 
         std::string line;
@@ -229,16 +241,40 @@ void Game::printSuspectIntroduction() {
         std::cout << "\n";
 
         switch (choice) {
+            // lenora grimshire interview
             case 'a':
-                cout << "[Lenora Grimshire]:\n\n"
-                        "\"After I’d greeted everyone and made my rounds in the ballroom, "
-                        "I began to feel a bit lightheaded… too much champagne, perhaps. "
-                        "Around 1:30, I excused myself and went upstairs to my boudoir. "
-                        "I poured myself a glass of wine and settled in with my book — "
-                        "the music from the ballroom was still faintly drifting up the stairs. "
-                        "I must have dozed off sometime near 2:45. The next thing I remember "
-                        "was waking to shouting in the hall… it was all so sudden and dreadful.\"\n\n";
-                break;
+                std::cout << "\n=========================================\n\n";
+
+                std::cout << "\033[1mSuspect:\033[0m Lenora Grimshire\n\n";
+
+                // bold + italicized description
+                type("\033[1mAppearance:\033[0m \033[3mAn elegant woman in her early 50s. She has smooth chestnut-brown hair\n"
+                    "\t    pinned up neatly with sparkling diamond clips. \n"
+                    "\t    Her blue silk gown matches her sharp green eyes, and she wears long satin gloves.\n"
+                    "\t    She moves gracefully, always with perfect posture.\033[0m\n\n", 15);
+
+                std::cout << "\033[1;36m"
+                        << "================ INTERVIEW ================"
+                        << "\033[0m\n\n";
+
+                type("\033[1mDetective:\033[0m \033[3mMrs. Grimshire, where were you last night?\033[0m\n\n", 15);
+
+                type("\033[1mLenora:\033[0m \033[3mAfter I’d greeted everyone and made my rounds in the ballroom,\n"
+                    "\tI began to feel a bit lightheaded… too much champagne, perhaps. \n"
+                    "\tAround 1:30, I excused myself and went upstairs to my boudoir. \n"
+                    "\tI poured myself a glass of wine and settled in with my book..\n"
+                    "\tthe music from the ballroom was still faintly drifting up the stairs. \n"
+                    "\tI must have dozed off sometime near 2:45. \n"
+                    "\tThe next thing I remember was waking to shouting in the hall… \n"
+                    "\tit was all so sudden and dreadful.\033[0m\n\n", 15);
+
+                type("\033[1mDetective:\033[0m \033[3mDid you and Damian argue that night?\033[0m\n\n", 15);
+
+                type("\033[1mLenora:\033[0m \033[3mYes… but only briefly, about his… behavior. \n"
+                    "\tStill, I would never harm him. He had many enemies, Detective.\033[0m\n\n", 15);
+
+                std::cout << "=========================================\n\n";
+             break;
 
             case 'b':
                 cout << "[Jellal Vexley]:\n\n"
@@ -297,3 +333,4 @@ void Game::printSuspectIntroduction() {
         }
     }
 }
+
