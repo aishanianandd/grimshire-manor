@@ -156,9 +156,9 @@ char Game::TalkOptions() {
 }
 
 void Game::TalkToSuspect(Suspect& suspect) {
-    std::cout << "Name: " << suspect.getName() << std::endl;
-    std::cout << "Description: " << suspect.getDescription() << std::endl;
-    std::cout << "Alibi: " << suspect.getAlibi() << std::endl; 
+    std::cout << "\nName: " << suspect.getName() << std::endl;
+    std::cout << "\nDescription: " << suspect.getDescription() << std::endl;
+    std::cout << "\nAlibi: " << suspect.getAlibi() << std::endl; 
 }
 void Game::printSuspectIntroduction() {
     cout << "--------------------------------------------" << endl;
