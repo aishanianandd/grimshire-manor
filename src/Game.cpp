@@ -304,7 +304,7 @@ Interview anyone in any order. (Q to quit)
 bool Game::accuseSuspect(){
 
     // ----------------- Accuse Suspect -----------------
-    std::cout << "\n\033[1;38;5;208m=== Make Your Accusation ===\033[0m\n\n";
+    std::cout << "\n\033[1;38;2;147;112;219m=== Make Your Accusation ===\033[0m\n\n";
     std::cout << "Who do you accuse of murdering Damian Grimshire?\n\n";
     std::cout << "A) Lenora Grimshire (Wife)\n";
     std::cout << "B) Jellal Vexley (Best Friend)\n";
