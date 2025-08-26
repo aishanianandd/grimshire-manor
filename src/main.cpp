@@ -38,7 +38,8 @@ int main(){
             choiceMade = true;
             type("\n\033[3mVery Well. The fate of the investigation now rests with you, " + game.getName() + ".\n");
             type("Tread carefully… every word, every glance, every clue matters.\n");
-            type("Let us begin.\033[0m\n");
+            type("Let us begin.\033[0m\n\n");
+            game.printSuspectIntroduction();
             running = true;
         } else if(choice == "b" || choice == "B" || choice == "no" || choice == "No") {
             choiceMade = true;
@@ -57,7 +58,7 @@ int main(){
     }
 
 
-
+    // ignore the 2nd line for all of these (that's not being printed out but can't be deleted rn either lol) 
     Suspect Lenora(
         "Lenora Grimshire",
         "is an elegant woman in her early 50s. She has smooth chestnut-brown hair pinned up neatly with sparkling diamond clips. Her blue silk gown matches her sharp green eyes, and she wears long satin gloves. She moves gracefully, always with perfect posture.",
@@ -106,23 +107,23 @@ int main(){
     cout << endl;
     
     // start game loop
-    
+
     // first starts with suspect interviews at police station
-    game.printSuspectIntroduction();
 
     while (running) {
-
-        cout << endl;
         
-        cout << "\n=== What would you like to do? ===\n";
+        cout << "\n\033[1m====== What would you like to do? ======\033[0m\n";
         cout << endl;
         cout << "A) Go to Foyer\nB) Go to Bedroom\nC) Go to Kitchen\n";
-        cout << "D) Go to Office\nE) Go to Library\nF) Talk to Suspects\n";
+        cout << "D) Go to Office\nE) Go to Library\nF) Review Suspects\n";
         cout << "Q) Quit\n";
         cout << endl;
         cout << "Enter your choice: ";
-        getline(cin, choice);
-        cout << endl;
+        std::cout << "Enter your choice: ";
+        std::getline(std::cin, choice);
+        if (!choice.empty()) {
+            choice = std::string(1, std::tolower(choice[0]));
+        }
 
         //  movement 
         if (choice == "A" || choice == "a") game.move("a");
@@ -149,13 +150,12 @@ int main(){
                 else if (userChoice == 'e') {
                     game.TalkToSuspect(Alfred);
                 }
-                else {
+                else if (userChoice == 'f'){
                     game.TalkToSuspect(Dante);
             }    //stores player's selection
-        }
-        else if (choice == "Q" || choice == "q") {
-            cout << "\033[3mReally? Quitting? The case isn’t going to solve itself, \033[1mDetective " + game.getName() + "...\033[0m\n";
-            cout << "\033[3mFine. Exiting the game. The murderer wins this round.\033[0m\n";
+        } else if (choice == "Q" || choice == "q") {
+            cout << "\n\033[3mReally? Quitting? The case isn’t going to solve itself, \033[1mDetective " + game.getName() + "...\033[0m\n";
+            cout << "\033[3m...Fine. Exiting the game. The murderer wins this round.\033[0m\n";
             running = false;
         }
 
