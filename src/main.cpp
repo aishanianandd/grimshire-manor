@@ -38,7 +38,7 @@ int main(){
             choiceMade = true;
             type("\n\033[3mVery Well. The fate of the investigation now rests with you, " + game.getName() + ".\n");
             type("Tread carefully… every word, every glance, every clue matters.\n");
-            type("Let us begin.\033[0m\n");
+            type("Let us begin.\033[0m\n\n");
             game.printSuspectIntroduction();
             running = true;
         } else if(choice == "b" || choice == "B" || choice == "no" || choice == "No") {
@@ -111,10 +111,8 @@ int main(){
     // first starts with suspect interviews at police station
 
     while (running) {
-
-        cout << endl;
         
-        cout << "\n=== What would you like to do? ===\n";
+        cout << "\n\033[1m====== What would you like to do? ======\033[0m\n";
         cout << endl;
         cout << "A) Go to Foyer\nB) Go to Bedroom\nC) Go to Kitchen\n";
         cout << "D) Go to Office\nE) Go to Library\nF) Talk to Suspects\n";
@@ -155,8 +153,7 @@ int main(){
                 else if (userChoice == 'f'){
                     game.TalkToSuspect(Dante);
             }    //stores player's selection
-        }
-        else if (choice == "Q" || choice == "q") {
+        } else if (choice == "Q" || choice == "q") {
             cout << "\n\033[3mReally? Quitting? The case isn’t going to solve itself, \033[1mDetective " + game.getName() + "...\033[0m\n";
             cout << "\033[3m...Fine. Exiting the game. The murderer wins this round.\033[0m\n";
             running = false;
