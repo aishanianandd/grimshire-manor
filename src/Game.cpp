@@ -1,9 +1,12 @@
 #include <iostream>
+#include <cctype>        // for std::tolower
 #include "Game.h"
 #include "Suspect.h"
 #include "Type.h"
 
-using namespace std;
+using std::cout;
+using std::endl;
+
 
 void Game::printIntroduction() {
     const char* MANSION = "\033[38;2;255;0;0m"
@@ -48,13 +51,11 @@ void Game::printIntroduction() {
 
 }
 
-// user's name
-void Game::setName(const string& n){
+void Game::setName(const std::string& n) {   // was: const string&
     name = n;
 }
 
-// retrieves user name
-string Game::getName(){
+std::string Game::getName() {                // was: string
     return name;
 }
 

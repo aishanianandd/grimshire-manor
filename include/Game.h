@@ -6,65 +6,40 @@
 #include "Location.h"
 #include "Suspect.h"
 
-using std::vector;
-using std::string;
-
 class Game {
-    private: 
-        bool running;
-        string name;
+    private:
+        bool running;    
+        std::string name;
 
-        vector<Suspect> suspects;    // character.h to be implemented
-        vector<Clue> clues;            // clue.h to be implemented
-        vector<string> heardStatements;  // to store statements (#12)
-        Location* currentLocation_ = nullptr;
+        std::vector<Suspect> suspects;            // switched from vector<Character>
+        std::vector<Clue> clues;
+        std::vector<std::string> heardStatements;
 
-        // dun dun dun.. the killer
-        const std::string TRUE_KILLER = "Celeste Grimshire";  // <- change later if you want
+        Location* currentLocation_ = nullptr;     // raw pointer as in your current .cpp
+
+        // Used in accuseSuspect(); kept as a member so your current Game.cpp compares to it directly
+        const std::string TRUE_KILLER = "Celeste Grimshire";
 
     public:
-    // helpers
-
-        // destructor added to clean up currentLocation_
         ~Game();
-
-        // prints intro including the mansion + title
+        // game flow
         void printIntroduction();
-        // prints 
+        bool move(const std::string& choice);     // choose a room and interact
+        void setName(const std::string& n);
+        std::string getName();                    // matches your Game.cpp return type
 
-        // introduces the suspects at the polic staion
-        void printSuspectIntroduction();
-
-        // movements 
-        bool move(const std::string& roomName);
-
-        // find room by name 
-        Location* findRoom(const std::string& roomName) const;
-        void visit(Location& room);
-
-        // sets name
-        void setName(const string& n);
-        string getName();
-
-        // accuse suspect
-        bool accuseSuspect();
-
-        // describes current loc
-        void describe() const;
-
-        // clues & statements (#5 & #12)
+        // clues + statements
         void addClue(const Clue& c);
         void reviewClues() const;
         void addStatement(const std::string& s);
         void reviewStatements() const;
-       
-        // suspects (#11)
+
+        // interact w/ suspects
         char TalkOptions();
         void TalkToSuspect(Suspect& suspect);
+        void printSuspectIntroduction();
+        bool accuseSuspect();
 
-
-       // optional helper for main loop
-       void talkToNPC(const string& npcName);
+        // optional helper used by the main loop
+        void talkToNPC(const std::string& npcName);
 };
-
-

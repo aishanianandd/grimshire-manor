@@ -2,4 +2,4 @@
 #include <string>
 
 // typing effect
-void type(const std::string& text, int speed);
+void type(const std::string& text, int = 10);
