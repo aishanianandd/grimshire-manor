@@ -39,6 +39,7 @@ int main(){
             type("\n\033[3mVery Well. The fate of the investigation now rests with you, " + game.getName() + ".\n");
             type("Tread carefully… every word, every glance, every clue matters.\n");
             type("Let us begin.\033[0m\n");
+            game.printSuspectIntroduction();
             running = true;
         } else if(choice == "b" || choice == "B" || choice == "no" || choice == "No") {
             choiceMade = true;
@@ -108,7 +109,6 @@ int main(){
     // start game loop
 
     // first starts with suspect interviews at police station
-    game.printSuspectIntroduction();
 
     while (running) {
 
