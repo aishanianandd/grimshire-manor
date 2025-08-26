@@ -116,6 +116,7 @@ int main(){
         cout << endl;
         cout << "A) Go to Foyer\nB) Go to Bedroom\nC) Go to Kitchen\n";
         cout << "D) Go to Office\nE) Go to Library\nF) Review Suspects\n";
+        cout << "G) Accuse Suspect\n";
         cout << "Q) Quit\n";
         cout << endl;
         std::cout << "Enter your choice: ";
@@ -152,6 +153,10 @@ int main(){
                 else if (userChoice == 'f'){
                     game.TalkToSuspect(Dante);
             }    //stores player's selection
+        } else if (choice == "g"){
+            if (game.accuseSuspect()) {
+                running = false;   // or just: break;
+            }
         } else if (choice == "Q" || choice == "q") {
             cout << "\n\033[3mReally? Quitting? The case isn’t going to solve itself, \033[1mDetective " + game.getName() + "...\033[0m\n";
             cout << "\033[3m...Fine. Exiting the game. The murderer wins this round.\033[0m\n";
