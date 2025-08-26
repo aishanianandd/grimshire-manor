@@ -2,7 +2,6 @@
 #include <vector>
 #include <string>
 
-#include "Character.h"
 #include "Clue.h"
 #include "Location.h"
 #include "Suspect.h"
@@ -15,7 +14,7 @@ class Game {
         bool running;
         string name;
 
-        vector<Character> suspects;    // character.h to be implemented
+        vector<Suspect> suspects;    // character.h to be implemented
         vector<Clue> clues;            // clue.h to be implemented
         vector<string> heardStatements;  // to store statements (#12)
         Location* currentLocation_ = nullptr;
