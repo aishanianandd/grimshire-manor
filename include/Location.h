@@ -16,6 +16,7 @@ class Location {
     void showOptions();           // prints a)/b)/c)/... and "x) back"
     void showLocationOptions();
     virtual ~Location() = default;
+    void interact();
 };
 
 class Foyer : public Location { public: Foyer(); };

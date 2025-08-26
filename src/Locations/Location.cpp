@@ -33,6 +33,20 @@ void Location::showOptions() {
     }
 }
 
+void Location::interact() {
+    while (true) {
+        // print options and read input
+        showOptions();
+
+        // go back to main menu when player chooses x
+        if (menuChoice == "x") break;
+
+        // handle the choice inside this room
+        showLocationOptions();
+        std::cout << "\n";
+    }
+}
+
 void Location::showLocationOptions() {
     if (name == "Foyer") {
         if (menuChoice == "a") {

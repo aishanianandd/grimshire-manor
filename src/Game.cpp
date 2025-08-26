@@ -82,7 +82,8 @@ bool Game::move(const std::string& choice) {
 
 
     // Show room options (this prints a), b), etc.)
-    currentLocation_->showOptions();
+    // currentLocation_->showOptions();
+    currentLocation_->interact();
 
     // show menu options after selecting a location
     currentLocation_->showLocationOptions();
