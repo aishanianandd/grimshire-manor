@@ -84,9 +84,9 @@ void Location::showLocationOptions() {
         }
     } else if (name == "Office") {
         if (menuChoice == "a") {
-            std::cout << "There's a photograph of Damian and Jellal's wife in an intimate pose" << std::endl;
+            std::cout << "There's a photograph of Damian and Jellal's wife in an intimate pose." << std::endl;
         } else if (menuChoice == "b") {
-            std::cout << "The sticky note in Damian's handwriting reads:"
+            std::cout << "The sticky note in Damian's handwriting reads: "
                 "Call Marcus regarding Celeste's arranged marriage to the Ackerman heir.\n";
         } else if (menuChoice == "c") {
             std::cout << "You notice a lock of dark brown hair caught on the back of Damian's chair.\n";
