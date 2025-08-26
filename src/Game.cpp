@@ -318,11 +318,11 @@ bool Game::accuseSuspect(){
     std::cout << "\n\033[1mYou are accusing:\033[0m " << accused << "\n";
     std::cout << "Are you sure? (y/n): ";
     std::string yn; std::getline(std::cin, yn);
+    cout << endl;
     if (!yn.empty()) yn = std::string(1, std::tolower(yn[0]));
     if (yn != "y") { std::cout << "You decide to gather more evidence first.\n"; return false; }
 
     // Decide win/lose
-    constexpr const char* TRUE_KILLER = "Lenora Grimshire"; // or wherever you keep this
     if (accused == TRUE_KILLER) {
         std::cout << "\033[1;32mYour accusation rings true. Justice is served.\033[0m\n";
         return true;   // end game (success)
