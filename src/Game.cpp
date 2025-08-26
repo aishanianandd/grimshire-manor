@@ -165,12 +165,27 @@ void Game::TalkToSuspect(Suspect& suspect) {
     std::cout << "\nAlibi: " << suspect.getAlibi() << std::endl; 
 }
 void Game::printSuspectIntroduction() {
-    cout << "--------------------------------------------" << endl;
-    cout << endl;
+    std::cout << "--------------------------------------------" << endl;
     
-    std::cout << "\n--- The Police Station ---\n\n" // added \n rn 
-                 "You arrive at the station where the main suspects await questioning.\n"
-                 "Interview anyone in any order. (Q to quit)\n\n";
+    static constexpr const char* POLICE = R"POLICE(
+                              ,
+                     __  _.-"` `'-.
+                    /||\'._ __{}_(
+                    ||||  |'--.__\
+                    |  L.(   ^_\^
+                    \ .-' |   _ |
+                    | |   )\___/
+                    |  \-'`:._]
+                    \__/;      '-.
+
+--- The Police Station ---
+
+You arrive at the station where the main suspects await questioning.
+Interview anyone in any order. (Q to quit)
+
+)POLICE";
+
+    std::cout << POLICE << '\n';
 
     bool interviewing = true;
     while (interviewing) {
