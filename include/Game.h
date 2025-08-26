@@ -26,6 +26,9 @@ class Game {
     public:
     // helpers
 
+        // destructor added to clean up currentLocation_
+        ~Game();
+
         // prints intro including the mansion + title
         void printIntroduction();
         // prints 
@@ -64,3 +67,5 @@ class Game {
        // optional helper for main loop
        void talkToNPC(const string& npcName);
 };
+
+
