@@ -190,13 +190,13 @@ void Game::visit(Location& room) {
 
 char Game::TalkOptions() {
     while (true) {
-        std::cout << "Who would you like to talk to?\n"
+        std::cout << "Who would you like to talk to?\n\n"
                      "(a) Damian's wife, Lenora Grimshire\n"
                      "(b) Damian's best friend, Jellal Vexley\n"
                      "(c) Damian's son, Alexander Grimshire\n"
                      "(d) Damian's daughter, Celeste Grimshire\n"
                      "(e) The butler, Alfred Crane\n"
-                     "(f) The chef, Dante Vermillion\n"
+                     "(f) The chef, Dante Vermillion\n\n"
                      "Please enter a letter a–f (or Q to quit): ";
 
         std::string line;
