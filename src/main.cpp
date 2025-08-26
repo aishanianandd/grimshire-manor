@@ -157,8 +157,8 @@ int main(){
             }    //stores player's selection
         }
         else if (choice == "Q" || choice == "q") {
-            cout << "\033[3mReally? Quitting? The case isn’t going to solve itself, \033[1mDetective " + game.getName() + "...\033[0m\n";
-            cout << "\033[3mFine. Exiting the game. The murderer wins this round.\033[0m\n";
+            cout << "\n\033[3mReally? Quitting? The case isn’t going to solve itself, \033[1mDetective " + game.getName() + "...\033[0m\n";
+            cout << "\033[3m...Fine. Exiting the game. The murderer wins this round.\033[0m\n";
             running = false;
         }
 
