@@ -104,12 +104,14 @@ int main(){
     // start game loop
     
     cout << endl;
-    game.printSuspectIntroduction();
-    cout << endl;
     
     // start game loop
 
     while (running) {
+        // first starts with suspect interviews at police station
+        game.printSuspectIntroduction();
+        cout << endl;
+        
         cout << "\n=== What would you like to do? ===\n";
         cout << endl;
         cout << "A) Go to Foyer\nB) Go to Bedroom\nC) Go to Kitchen\n";

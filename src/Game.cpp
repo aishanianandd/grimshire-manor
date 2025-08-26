@@ -37,10 +37,13 @@ void Game::printIntroduction() {
 
     type("Tell me, detective—are you ready to face what waits in the dark?\n\n");
 
-    // auraful title box
-    type("|=================================================|\n", 2);
-    type("|            THE GRIMSHIRE MANOR MURDER           |\n", 2);
-    type("|=================================================|\n\n", 2);
+    // aurafull title box in darker red
+    type("\033[1;38;5;160m|=================================================|\033[0m\n", 2);
+    type("\033[1;38;5;160m|            THE GRIMSHIRE MANOR MURDER           |\033[0m\n", 2);
+    type("\033[1;38;5;160m|=================================================|\033[0m\n\n", 2);
+
+
+
 }
 
 // user's name
