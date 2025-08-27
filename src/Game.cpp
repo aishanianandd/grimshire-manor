@@ -343,7 +343,7 @@ Interview anyone in any order. (Q to quit)
                 break;
 
             case 'q':
-                cout << "You wrap up the questioning for now.\n\n";
+                cout << "You wrap up the questioning for now. ب_ب\n\n";
                 cout << endl;
                 cout << "--------------------------------------------" << endl;
                 interviewing = false;
@@ -361,7 +361,7 @@ bool Game::accuseSuspect(){
     // ----------------- Accuse Suspect -----------------
     std::cout << "\n\033[1;38;2;147;112;219m=== Make Your Accusation ===\033[0m\n\n";
     std::cout << "Who do you accuse of murdering Damian Grimshire?\n\n";
-    std::cout << "A) Lenora Grimshire (Wife)\n";
+    std::cout << "A) Lenora Grimshire (Wife) 𓏌\n";
     std::cout << "B) Jellal Vexley (Best Friend)\n";
     std::cout << "C) Alexander Grimshire (Son)\n";
     std::cout << "D) Celeste Grimshire (Daughter)\n";
