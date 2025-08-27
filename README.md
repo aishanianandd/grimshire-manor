@@ -97,7 +97,8 @@ We developed this project in C++ using VSCode, with all gameplay taking place in
 > Click [here](https://docs.google.com/document/d/1NH2fJ62OaL5OKfC7YfcQBNCQ8bFwoK7yt_qhrNwcQig/edit?usp=sharing) to view screen layouts.
 
 ## Class Diagram
-> <img width="3040" height="1984" alt="Class Diagram" src="https://github.com/user-attachments/assets/bbc074f2-64bf-4593-a814-cf0648efa4b4" />
+> <img width="1656" height="1238" alt="IMG_8999" src="https://github.com/user-attachments/assets/44b5599f-da42-476d-af81-6164e3edcfee" />
+
 
 ## SOLID Principles
 
@@ -127,7 +128,25 @@ We applied DIP by making the Game depend on abstractions (Action, Location) inst
 This helped because new actions or rooms can be swapped in without changing the game loop, keeping the code stable and testable.
  
  ## Screenshots
- > Screenshots of the input/output after running your application
+
+> <img width="783" height="564" alt="Screenshot 2025-08-27 at 12 41 13 PM" src="https://github.com/user-attachments/assets/7b4e9a65-d958-4330-96c2-cfdfb26e2428" />
+
+> <img width="513" height="453" alt="Screenshot 2025-08-27 at 12 41 37 PM" src="https://github.com/user-attachments/assets/8d5872b6-072d-4b58-97db-5e99ed416601" />
+
+> <img width="658" height="572" alt="Screenshot 2025-08-27 at 12 41 54 PM" src="https://github.com/user-attachments/assets/e650dd81-f8be-4a42-b2bc-d468e4678899" />
+
+> <img width="770" height="740" alt="Screenshot 2025-08-27 at 12 42 14 PM" src="https://github.com/user-attachments/assets/d424f995-443e-4c29-a227-f6c31e305161" />
+
+> <img width="800" height="167" alt="Screenshot 2025-08-27 at 12 46 15 PM" src="https://github.com/user-attachments/assets/2f7925cd-ce0e-4571-a81a-950af345abf2" />
+
+> <img width="779" height="339" alt="Screenshot 2025-08-27 at 12 46 39 PM" src="https://github.com/user-attachments/assets/5812f0a0-520e-49c4-8557-09d3ec4060a0" />
+
+> <img width="324" height="304" alt="Screenshot 2025-08-27 at 12 47 16 PM" src="https://github.com/user-attachments/assets/52769913-7f89-41d9-8f62-d963cef2c586" />
+
+> <img width="322" height="86" alt="Screenshot 2025-08-27 at 12 47 27 PM" src="https://github.com/user-attachments/assets/7bfbff0c-eaa9-48d6-80f5-d9a89f1ede2c" />
+
+
+
  ## Installation/Usage
  > To run The Grimshire Manor, clone this GitHub repository on any Linux-based terminal with support for git and make. Then, use the following commands:
 >
@@ -145,6 +164,7 @@ make
 mkdir -p build
 cd build
 cmake ..
-./build/runtests
+make
+./runtests
 ```
  
