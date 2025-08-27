@@ -97,7 +97,8 @@ We developed this project in C++ using VSCode, with all gameplay taking place in
 > Click [here](https://docs.google.com/document/d/1NH2fJ62OaL5OKfC7YfcQBNCQ8bFwoK7yt_qhrNwcQig/edit?usp=sharing) to view screen layouts.
 
 ## Class Diagram
-> <img width="3040" height="1984" alt="Class Diagram" src="https://github.com/user-attachments/assets/bbc074f2-64bf-4593-a814-cf0648efa4b4" />
+> <img width="1656" height="1238" alt="IMG_8999" src="https://github.com/user-attachments/assets/44b5599f-da42-476d-af81-6164e3edcfee" />
+
 
 ## SOLID Principles
 
