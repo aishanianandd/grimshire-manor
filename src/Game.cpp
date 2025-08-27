@@ -30,7 +30,7 @@ void Game::printIntroduction() {
     type("...but all that grandeur has been tainted.\n");
     type("Last night, tragedy struck.\n\n");
     type("Damian Grimshire, the head of the family and host of the party, was discovered lifeless at the bottom of the grand staircase.\n");  
-    type("The official word? A drunken stumble, a fatal fall down the staricase at precisely 3:17 AM.\n");
+    type("The official word? A drunken stumble, a fatal fall at precisely 3:17 AM.\n\n");
     const char* DUDE = 
     R"DUDE(
        ○ 
@@ -345,7 +345,7 @@ Interview anyone in any order. (Q to quit)
                 break;
 
             case 'q':
-                cout << "You wrap up the questioning for now.\n\n";
+                cout << "You wrap up the questioning for now. ب_ب\n\n";
                 cout << endl;
                 cout << "--------------------------------------------" << endl;
                 interviewing = false;
@@ -363,7 +363,7 @@ bool Game::accuseSuspect(){
     // ----------------- Accuse Suspect -----------------
     std::cout << "\n\033[1;38;2;147;112;219m=== Make Your Accusation ===\033[0m\n\n";
     std::cout << "Who do you accuse of murdering Damian Grimshire?\n\n";
-    std::cout << "A) Lenora Grimshire (Wife)\n";
+    std::cout << "A) Lenora Grimshire (Wife) 𓏌\n";
     std::cout << "B) Jellal Vexley (Best Friend)\n";
     std::cout << "C) Alexander Grimshire (Son)\n";
     std::cout << "D) Celeste Grimshire (Daughter)\n";
