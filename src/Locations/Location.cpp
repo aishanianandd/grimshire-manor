@@ -21,7 +21,9 @@ void Location::showOptions() {
     std::cout << "x) back\n";
 
     std::string line;
+    std::cout << "\nEnter your choice: ";
     std::getline(std::cin, line);           // always use getline
+    std::cout << std::endl;
 
     if (line.empty()) {
         menuChoice = " ";                   // default if user just hits Enter

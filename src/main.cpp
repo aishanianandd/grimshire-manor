@@ -15,17 +15,17 @@ int main(){
     game.printIntroduction();
     
     string name;
-    type("Enter your name: ");
+    type("\033[1mEnter your name: \033[0m");
     getline(cin, name);
     cout << endl;
     game.setName(name);
 
 
     // ask the player a question
-    type("Are you up to the task, \033[1mDetective " + game.getName() + "\033[0m? (¬‿¬)\n\n");
+    type("Are you up to the task, \033[1mDetective " + game.getName() + "\033[0m . . . (¬_´¬ ) ?\n\n");
     cout << "A) Yes\nB) No\n";
     cout << endl;
-    cout << "Enter your choice: ";
+    cout << "\033[1mEnter your choice: \033[0m";
 
 
     // responses to the selected choice
@@ -44,7 +44,7 @@ int main(){
         } else if(choice == "b" || choice == "B" || choice == "no" || choice == "No") {
             choiceMade = true;
             type("\n\033[3m…Ah. Perhaps the weight of the Grimshire legacy is too much for one soul to bear.\n");
-            type("But justice waits for no one, detective ( o_o) \n");
+            type("But justice waits for no one, detective ¯\\_(ツ)_/¯ \n");
             type("When you are ready… the manor will still be here.\033[0m\n");
             running = false;
         } else {
