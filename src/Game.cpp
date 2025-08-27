@@ -26,7 +26,7 @@ void Game::printIntroduction() {
     type("...but all that grandeur has been tainted.\n");
     type("Last night, tragedy struck.\n");
     type("Damian Grimshire, the head of the family and host of the party, was discovered lifeless at the bottom of the grand staircase.\n");  
-    type("The official word? A drunken stumble, a fatal fall down the staricase at precisely 3:17 AM.\n\n");
+    type("The official word? A drunken stumble, a fatal fall at precisely 3:17 AM.\n\n");
     const char* DUDE = 
     R"DUDE(
        ○ 
