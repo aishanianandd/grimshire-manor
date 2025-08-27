@@ -249,33 +249,6 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-src/Character.o: src/Character.cpp.o
-.PHONY : src/Character.o
-
-# target to build an object file
-src/Character.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Character.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtests.dir/build.make CMakeFiles/runtests.dir/src/Character.cpp.o
-.PHONY : src/Character.cpp.o
-
-src/Character.i: src/Character.cpp.i
-.PHONY : src/Character.i
-
-# target to preprocess a source file
-src/Character.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Character.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtests.dir/build.make CMakeFiles/runtests.dir/src/Character.cpp.i
-.PHONY : src/Character.cpp.i
-
-src/Character.s: src/Character.cpp.s
-.PHONY : src/Character.s
-
-# target to generate assembly for a file
-src/Character.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Character.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtests.dir/build.make CMakeFiles/runtests.dir/src/Character.cpp.s
-.PHONY : src/Character.cpp.s
-
 src/Clue.o: src/Clue.cpp.o
 .PHONY : src/Clue.o
 
@@ -637,9 +610,6 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... runtests"
-	@echo "... src/Character.o"
-	@echo "... src/Character.i"
-	@echo "... src/Character.s"
 	@echo "... src/Clue.o"
 	@echo "... src/Clue.i"
 	@echo "... src/Clue.s"

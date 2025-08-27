@@ -69,24 +69,10 @@ include CMakeFiles/game.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/game.dir/flags.make
 
-CMakeFiles/game.dir/src/Character.cpp.o: CMakeFiles/game.dir/flags.make
-CMakeFiles/game.dir/src/Character.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Character.cpp
-CMakeFiles/game.dir/src/Character.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/game.dir/src/Character.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/Character.cpp.o -MF CMakeFiles/game.dir/src/Character.cpp.o.d -o CMakeFiles/game.dir/src/Character.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Character.cpp
-
-CMakeFiles/game.dir/src/Character.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/Character.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/asrin045/final-project-tuffyteam/src/Character.cpp > CMakeFiles/game.dir/src/Character.cpp.i
-
-CMakeFiles/game.dir/src/Character.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/Character.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/asrin045/final-project-tuffyteam/src/Character.cpp -o CMakeFiles/game.dir/src/Character.cpp.s
-
 CMakeFiles/game.dir/src/Clue.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/Clue.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Clue.cpp
 CMakeFiles/game.dir/src/Clue.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/game.dir/src/Clue.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/game.dir/src/Clue.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/Clue.cpp.o -MF CMakeFiles/game.dir/src/Clue.cpp.o.d -o CMakeFiles/game.dir/src/Clue.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Clue.cpp
 
 CMakeFiles/game.dir/src/Clue.cpp.i: cmake_force
@@ -100,7 +86,7 @@ CMakeFiles/game.dir/src/Clue.cpp.s: cmake_force
 CMakeFiles/game.dir/src/Game.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/Game.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Game.cpp
 CMakeFiles/game.dir/src/Game.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game.dir/src/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/game.dir/src/Game.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/Game.cpp.o -MF CMakeFiles/game.dir/src/Game.cpp.o.d -o CMakeFiles/game.dir/src/Game.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Game.cpp
 
 CMakeFiles/game.dir/src/Game.cpp.i: cmake_force
@@ -114,7 +100,7 @@ CMakeFiles/game.dir/src/Game.cpp.s: cmake_force
 CMakeFiles/game.dir/src/Locations/Bedroom.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/Locations/Bedroom.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Bedroom.cpp
 CMakeFiles/game.dir/src/Locations/Bedroom.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game.dir/src/Locations/Bedroom.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game.dir/src/Locations/Bedroom.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/Locations/Bedroom.cpp.o -MF CMakeFiles/game.dir/src/Locations/Bedroom.cpp.o.d -o CMakeFiles/game.dir/src/Locations/Bedroom.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Bedroom.cpp
 
 CMakeFiles/game.dir/src/Locations/Bedroom.cpp.i: cmake_force
@@ -128,7 +114,7 @@ CMakeFiles/game.dir/src/Locations/Bedroom.cpp.s: cmake_force
 CMakeFiles/game.dir/src/Locations/Foyer.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/Locations/Foyer.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Foyer.cpp
 CMakeFiles/game.dir/src/Locations/Foyer.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game.dir/src/Locations/Foyer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game.dir/src/Locations/Foyer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/Locations/Foyer.cpp.o -MF CMakeFiles/game.dir/src/Locations/Foyer.cpp.o.d -o CMakeFiles/game.dir/src/Locations/Foyer.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Foyer.cpp
 
 CMakeFiles/game.dir/src/Locations/Foyer.cpp.i: cmake_force
@@ -142,7 +128,7 @@ CMakeFiles/game.dir/src/Locations/Foyer.cpp.s: cmake_force
 CMakeFiles/game.dir/src/Locations/Kitchen.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/Locations/Kitchen.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Kitchen.cpp
 CMakeFiles/game.dir/src/Locations/Kitchen.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game.dir/src/Locations/Kitchen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game.dir/src/Locations/Kitchen.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/Locations/Kitchen.cpp.o -MF CMakeFiles/game.dir/src/Locations/Kitchen.cpp.o.d -o CMakeFiles/game.dir/src/Locations/Kitchen.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Kitchen.cpp
 
 CMakeFiles/game.dir/src/Locations/Kitchen.cpp.i: cmake_force
@@ -156,7 +142,7 @@ CMakeFiles/game.dir/src/Locations/Kitchen.cpp.s: cmake_force
 CMakeFiles/game.dir/src/Locations/Library.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/Locations/Library.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Library.cpp
 CMakeFiles/game.dir/src/Locations/Library.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/game.dir/src/Locations/Library.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game.dir/src/Locations/Library.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/Locations/Library.cpp.o -MF CMakeFiles/game.dir/src/Locations/Library.cpp.o.d -o CMakeFiles/game.dir/src/Locations/Library.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Library.cpp
 
 CMakeFiles/game.dir/src/Locations/Library.cpp.i: cmake_force
@@ -170,7 +156,7 @@ CMakeFiles/game.dir/src/Locations/Library.cpp.s: cmake_force
 CMakeFiles/game.dir/src/Locations/Location.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/Locations/Location.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Location.cpp
 CMakeFiles/game.dir/src/Locations/Location.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/game.dir/src/Locations/Location.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/game.dir/src/Locations/Location.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/Locations/Location.cpp.o -MF CMakeFiles/game.dir/src/Locations/Location.cpp.o.d -o CMakeFiles/game.dir/src/Locations/Location.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Location.cpp
 
 CMakeFiles/game.dir/src/Locations/Location.cpp.i: cmake_force
@@ -184,7 +170,7 @@ CMakeFiles/game.dir/src/Locations/Location.cpp.s: cmake_force
 CMakeFiles/game.dir/src/Locations/Office.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/Locations/Office.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Office.cpp
 CMakeFiles/game.dir/src/Locations/Office.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/game.dir/src/Locations/Office.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/game.dir/src/Locations/Office.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/Locations/Office.cpp.o -MF CMakeFiles/game.dir/src/Locations/Office.cpp.o.d -o CMakeFiles/game.dir/src/Locations/Office.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Office.cpp
 
 CMakeFiles/game.dir/src/Locations/Office.cpp.i: cmake_force
@@ -198,7 +184,7 @@ CMakeFiles/game.dir/src/Locations/Office.cpp.s: cmake_force
 CMakeFiles/game.dir/src/Suspect.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/Suspect.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Suspect.cpp
 CMakeFiles/game.dir/src/Suspect.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/game.dir/src/Suspect.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/game.dir/src/Suspect.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/Suspect.cpp.o -MF CMakeFiles/game.dir/src/Suspect.cpp.o.d -o CMakeFiles/game.dir/src/Suspect.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Suspect.cpp
 
 CMakeFiles/game.dir/src/Suspect.cpp.i: cmake_force
@@ -212,7 +198,7 @@ CMakeFiles/game.dir/src/Suspect.cpp.s: cmake_force
 CMakeFiles/game.dir/src/Type.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/Type.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Type.cpp
 CMakeFiles/game.dir/src/Type.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/game.dir/src/Type.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/game.dir/src/Type.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/Type.cpp.o -MF CMakeFiles/game.dir/src/Type.cpp.o.d -o CMakeFiles/game.dir/src/Type.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Type.cpp
 
 CMakeFiles/game.dir/src/Type.cpp.i: cmake_force
@@ -226,7 +212,7 @@ CMakeFiles/game.dir/src/Type.cpp.s: cmake_force
 CMakeFiles/game.dir/src/main.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/main.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/main.cpp
 CMakeFiles/game.dir/src/main.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/game.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/game.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/main.cpp.o -MF CMakeFiles/game.dir/src/main.cpp.o.d -o CMakeFiles/game.dir/src/main.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/main.cpp
 
 CMakeFiles/game.dir/src/main.cpp.i: cmake_force
@@ -239,7 +225,6 @@ CMakeFiles/game.dir/src/main.cpp.s: cmake_force
 
 # Object files for target game
 game_OBJECTS = \
-"CMakeFiles/game.dir/src/Character.cpp.o" \
 "CMakeFiles/game.dir/src/Clue.cpp.o" \
 "CMakeFiles/game.dir/src/Game.cpp.o" \
 "CMakeFiles/game.dir/src/Locations/Bedroom.cpp.o" \
@@ -255,7 +240,6 @@ game_OBJECTS = \
 # External object files for target game
 game_EXTERNAL_OBJECTS =
 
-game: CMakeFiles/game.dir/src/Character.cpp.o
 game: CMakeFiles/game.dir/src/Clue.cpp.o
 game: CMakeFiles/game.dir/src/Game.cpp.o
 game: CMakeFiles/game.dir/src/Locations/Bedroom.cpp.o
@@ -269,7 +253,7 @@ game: CMakeFiles/game.dir/src/Type.cpp.o
 game: CMakeFiles/game.dir/src/main.cpp.o
 game: CMakeFiles/game.dir/build.make
 game: CMakeFiles/game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

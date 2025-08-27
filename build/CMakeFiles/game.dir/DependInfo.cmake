@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/csmajs/asrin045/final-project-tuffyteam/src/Character.cpp" "CMakeFiles/game.dir/src/Character.cpp.o" "gcc" "CMakeFiles/game.dir/src/Character.cpp.o.d"
   "/home/csmajs/asrin045/final-project-tuffyteam/src/Clue.cpp" "CMakeFiles/game.dir/src/Clue.cpp.o" "gcc" "CMakeFiles/game.dir/src/Clue.cpp.o.d"
   "/home/csmajs/asrin045/final-project-tuffyteam/src/Game.cpp" "CMakeFiles/game.dir/src/Game.cpp.o" "gcc" "CMakeFiles/game.dir/src/Game.cpp.o.d"
   "/home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Bedroom.cpp" "CMakeFiles/game.dir/src/Locations/Bedroom.cpp.o" "gcc" "CMakeFiles/game.dir/src/Locations/Bedroom.cpp.o.d"
