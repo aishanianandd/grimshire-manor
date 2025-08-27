@@ -1,5 +1,9 @@
 #include "gtest/gtest.h"
-#include "Location.h"
+#include "Locations/Foyer.h"
+#include "Locations/Bedroom.h"
+#include "Locations/Kitchen.h"
+#include "Locations/Library.h"
+#include "Locations/Office.h"
 
 // Test fixture for Location-derived classes
 class LocationTest : public ::testing::Test {
@@ -51,9 +55,4 @@ TEST_F(LocationTest, ManualMenuChoice) {
 
     bedroom.menuChoice = "x";
     EXPECT_EQ(bedroom.menuChoice, "x");
-}
-
-int main(int argc, char **argv) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
 }

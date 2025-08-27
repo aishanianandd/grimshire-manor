@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/csmajs/asrin045/final-project-tuffyteam/src/Suspect.cpp" "CMakeFiles/runtests.dir/src/Suspect.cpp.o" "gcc" "CMakeFiles/runtests.dir/src/Suspect.cpp.o.d"
   "/home/csmajs/asrin045/final-project-tuffyteam/src/Type.cpp" "CMakeFiles/runtests.dir/src/Type.cpp.o" "gcc" "CMakeFiles/runtests.dir/src/Type.cpp.o.d"
   "/home/csmajs/asrin045/final-project-tuffyteam/test/gameTest.cpp" "CMakeFiles/runtests.dir/test/gameTest.cpp.o" "gcc" "CMakeFiles/runtests.dir/test/gameTest.cpp.o.d"
+  "/home/csmajs/asrin045/final-project-tuffyteam/test/locationTest.cpp" "CMakeFiles/runtests.dir/test/locationTest.cpp.o" "gcc" "CMakeFiles/runtests.dir/test/locationTest.cpp.o.d"
   "/home/csmajs/asrin045/final-project-tuffyteam/test/suspectTest.cpp" "CMakeFiles/runtests.dir/test/suspectTest.cpp.o" "gcc" "CMakeFiles/runtests.dir/test/suspectTest.cpp.o.d"
   )
 

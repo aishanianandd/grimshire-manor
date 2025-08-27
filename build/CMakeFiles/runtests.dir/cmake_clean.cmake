@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/runtests.dir/src/Type.cpp.o.d"
   "CMakeFiles/runtests.dir/test/gameTest.cpp.o"
   "CMakeFiles/runtests.dir/test/gameTest.cpp.o.d"
+  "CMakeFiles/runtests.dir/test/locationTest.cpp.o"
+  "CMakeFiles/runtests.dir/test/locationTest.cpp.o.d"
   "CMakeFiles/runtests.dir/test/suspectTest.cpp.o"
   "CMakeFiles/runtests.dir/test/suspectTest.cpp.o.d"
   "runtests"

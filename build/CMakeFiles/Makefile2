@@ -163,12 +163,12 @@ CMakeFiles/runtests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/runtests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtests.dir/build.make CMakeFiles/runtests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtests.dir/build.make CMakeFiles/runtests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33 "Built target runtests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33,34 "Built target runtests"
 .PHONY : CMakeFiles/runtests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/runtests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/runtests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles 0
 .PHONY : CMakeFiles/runtests.dir/rule
@@ -212,8 +212,8 @@ googletest/googlemock/CMakeFiles/gmock.dir/clean:
 # Target rules for target googletest/googlemock/CMakeFiles/gmock_main.dir
 
 # All Build rule for target.
-googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googlemock/CMakeFiles/gmock.dir/all
+googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=15,16 "Built target gmock_main"

@@ -567,6 +567,30 @@ test/gameTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtests.dir/build.make CMakeFiles/runtests.dir/test/gameTest.cpp.s
 .PHONY : test/gameTest.cpp.s
 
+test/locationTest.o: test/locationTest.cpp.o
+.PHONY : test/locationTest.o
+
+# target to build an object file
+test/locationTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtests.dir/build.make CMakeFiles/runtests.dir/test/locationTest.cpp.o
+.PHONY : test/locationTest.cpp.o
+
+test/locationTest.i: test/locationTest.cpp.i
+.PHONY : test/locationTest.i
+
+# target to preprocess a source file
+test/locationTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtests.dir/build.make CMakeFiles/runtests.dir/test/locationTest.cpp.i
+.PHONY : test/locationTest.cpp.i
+
+test/locationTest.s: test/locationTest.cpp.s
+.PHONY : test/locationTest.s
+
+# target to generate assembly for a file
+test/locationTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtests.dir/build.make CMakeFiles/runtests.dir/test/locationTest.cpp.s
+.PHONY : test/locationTest.cpp.s
+
 test/suspectTest.o: test/suspectTest.cpp.o
 .PHONY : test/suspectTest.o
 
@@ -646,6 +670,9 @@ help:
 	@echo "... test/gameTest.o"
 	@echo "... test/gameTest.i"
 	@echo "... test/gameTest.s"
+	@echo "... test/locationTest.o"
+	@echo "... test/locationTest.i"
+	@echo "... test/locationTest.s"
 	@echo "... test/suspectTest.o"
 	@echo "... test/suspectTest.i"
 	@echo "... test/suspectTest.s"

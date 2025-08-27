@@ -24,6 +24,7 @@ add_subdirectory(googletest)
 set(TEST_SOURCES
     test/gameTest.cpp
     test/suspectTest.cpp
+    test/locationTest.cpp
 )
 
 add_executable(runtests ${TEST_SOURCES} ${GAME_SOURCES})

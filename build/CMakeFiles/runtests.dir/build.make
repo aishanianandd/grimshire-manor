@@ -97,10 +97,24 @@ CMakeFiles/runtests.dir/test/suspectTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runtests.dir/test/suspectTest.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/asrin045/final-project-tuffyteam/test/suspectTest.cpp -o CMakeFiles/runtests.dir/test/suspectTest.cpp.s
 
+CMakeFiles/runtests.dir/test/locationTest.cpp.o: CMakeFiles/runtests.dir/flags.make
+CMakeFiles/runtests.dir/test/locationTest.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/test/locationTest.cpp
+CMakeFiles/runtests.dir/test/locationTest.cpp.o: CMakeFiles/runtests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runtests.dir/test/locationTest.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runtests.dir/test/locationTest.cpp.o -MF CMakeFiles/runtests.dir/test/locationTest.cpp.o.d -o CMakeFiles/runtests.dir/test/locationTest.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/test/locationTest.cpp
+
+CMakeFiles/runtests.dir/test/locationTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runtests.dir/test/locationTest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/asrin045/final-project-tuffyteam/test/locationTest.cpp > CMakeFiles/runtests.dir/test/locationTest.cpp.i
+
+CMakeFiles/runtests.dir/test/locationTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runtests.dir/test/locationTest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/asrin045/final-project-tuffyteam/test/locationTest.cpp -o CMakeFiles/runtests.dir/test/locationTest.cpp.s
+
 CMakeFiles/runtests.dir/src/Clue.cpp.o: CMakeFiles/runtests.dir/flags.make
 CMakeFiles/runtests.dir/src/Clue.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Clue.cpp
 CMakeFiles/runtests.dir/src/Clue.cpp.o: CMakeFiles/runtests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runtests.dir/src/Clue.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/runtests.dir/src/Clue.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runtests.dir/src/Clue.cpp.o -MF CMakeFiles/runtests.dir/src/Clue.cpp.o.d -o CMakeFiles/runtests.dir/src/Clue.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Clue.cpp
 
 CMakeFiles/runtests.dir/src/Clue.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/runtests.dir/src/Clue.cpp.s: cmake_force
 CMakeFiles/runtests.dir/src/Game.cpp.o: CMakeFiles/runtests.dir/flags.make
 CMakeFiles/runtests.dir/src/Game.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Game.cpp
 CMakeFiles/runtests.dir/src/Game.cpp.o: CMakeFiles/runtests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/runtests.dir/src/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/runtests.dir/src/Game.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runtests.dir/src/Game.cpp.o -MF CMakeFiles/runtests.dir/src/Game.cpp.o.d -o CMakeFiles/runtests.dir/src/Game.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Game.cpp
 
 CMakeFiles/runtests.dir/src/Game.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/runtests.dir/src/Game.cpp.s: cmake_force
 CMakeFiles/runtests.dir/src/Locations/Bedroom.cpp.o: CMakeFiles/runtests.dir/flags.make
 CMakeFiles/runtests.dir/src/Locations/Bedroom.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Bedroom.cpp
 CMakeFiles/runtests.dir/src/Locations/Bedroom.cpp.o: CMakeFiles/runtests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/runtests.dir/src/Locations/Bedroom.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/runtests.dir/src/Locations/Bedroom.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runtests.dir/src/Locations/Bedroom.cpp.o -MF CMakeFiles/runtests.dir/src/Locations/Bedroom.cpp.o.d -o CMakeFiles/runtests.dir/src/Locations/Bedroom.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Bedroom.cpp
 
 CMakeFiles/runtests.dir/src/Locations/Bedroom.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/runtests.dir/src/Locations/Bedroom.cpp.s: cmake_force
 CMakeFiles/runtests.dir/src/Locations/Foyer.cpp.o: CMakeFiles/runtests.dir/flags.make
 CMakeFiles/runtests.dir/src/Locations/Foyer.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Foyer.cpp
 CMakeFiles/runtests.dir/src/Locations/Foyer.cpp.o: CMakeFiles/runtests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/runtests.dir/src/Locations/Foyer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/runtests.dir/src/Locations/Foyer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runtests.dir/src/Locations/Foyer.cpp.o -MF CMakeFiles/runtests.dir/src/Locations/Foyer.cpp.o.d -o CMakeFiles/runtests.dir/src/Locations/Foyer.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Foyer.cpp
 
 CMakeFiles/runtests.dir/src/Locations/Foyer.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/runtests.dir/src/Locations/Foyer.cpp.s: cmake_force
 CMakeFiles/runtests.dir/src/Locations/Kitchen.cpp.o: CMakeFiles/runtests.dir/flags.make
 CMakeFiles/runtests.dir/src/Locations/Kitchen.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Kitchen.cpp
 CMakeFiles/runtests.dir/src/Locations/Kitchen.cpp.o: CMakeFiles/runtests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/runtests.dir/src/Locations/Kitchen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/runtests.dir/src/Locations/Kitchen.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runtests.dir/src/Locations/Kitchen.cpp.o -MF CMakeFiles/runtests.dir/src/Locations/Kitchen.cpp.o.d -o CMakeFiles/runtests.dir/src/Locations/Kitchen.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Kitchen.cpp
 
 CMakeFiles/runtests.dir/src/Locations/Kitchen.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/runtests.dir/src/Locations/Kitchen.cpp.s: cmake_force
 CMakeFiles/runtests.dir/src/Locations/Library.cpp.o: CMakeFiles/runtests.dir/flags.make
 CMakeFiles/runtests.dir/src/Locations/Library.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Library.cpp
 CMakeFiles/runtests.dir/src/Locations/Library.cpp.o: CMakeFiles/runtests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/runtests.dir/src/Locations/Library.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/runtests.dir/src/Locations/Library.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runtests.dir/src/Locations/Library.cpp.o -MF CMakeFiles/runtests.dir/src/Locations/Library.cpp.o.d -o CMakeFiles/runtests.dir/src/Locations/Library.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Library.cpp
 
 CMakeFiles/runtests.dir/src/Locations/Library.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/runtests.dir/src/Locations/Library.cpp.s: cmake_force
 CMakeFiles/runtests.dir/src/Locations/Location.cpp.o: CMakeFiles/runtests.dir/flags.make
 CMakeFiles/runtests.dir/src/Locations/Location.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Location.cpp
 CMakeFiles/runtests.dir/src/Locations/Location.cpp.o: CMakeFiles/runtests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/runtests.dir/src/Locations/Location.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/runtests.dir/src/Locations/Location.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runtests.dir/src/Locations/Location.cpp.o -MF CMakeFiles/runtests.dir/src/Locations/Location.cpp.o.d -o CMakeFiles/runtests.dir/src/Locations/Location.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Location.cpp
 
 CMakeFiles/runtests.dir/src/Locations/Location.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/runtests.dir/src/Locations/Location.cpp.s: cmake_force
 CMakeFiles/runtests.dir/src/Locations/Office.cpp.o: CMakeFiles/runtests.dir/flags.make
 CMakeFiles/runtests.dir/src/Locations/Office.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Office.cpp
 CMakeFiles/runtests.dir/src/Locations/Office.cpp.o: CMakeFiles/runtests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/runtests.dir/src/Locations/Office.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/runtests.dir/src/Locations/Office.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runtests.dir/src/Locations/Office.cpp.o -MF CMakeFiles/runtests.dir/src/Locations/Office.cpp.o.d -o CMakeFiles/runtests.dir/src/Locations/Office.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Office.cpp
 
 CMakeFiles/runtests.dir/src/Locations/Office.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/runtests.dir/src/Locations/Office.cpp.s: cmake_force
 CMakeFiles/runtests.dir/src/Suspect.cpp.o: CMakeFiles/runtests.dir/flags.make
 CMakeFiles/runtests.dir/src/Suspect.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Suspect.cpp
 CMakeFiles/runtests.dir/src/Suspect.cpp.o: CMakeFiles/runtests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/runtests.dir/src/Suspect.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/runtests.dir/src/Suspect.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runtests.dir/src/Suspect.cpp.o -MF CMakeFiles/runtests.dir/src/Suspect.cpp.o.d -o CMakeFiles/runtests.dir/src/Suspect.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Suspect.cpp
 
 CMakeFiles/runtests.dir/src/Suspect.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/runtests.dir/src/Suspect.cpp.s: cmake_force
 CMakeFiles/runtests.dir/src/Type.cpp.o: CMakeFiles/runtests.dir/flags.make
 CMakeFiles/runtests.dir/src/Type.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Type.cpp
 CMakeFiles/runtests.dir/src/Type.cpp.o: CMakeFiles/runtests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/runtests.dir/src/Type.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/runtests.dir/src/Type.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runtests.dir/src/Type.cpp.o -MF CMakeFiles/runtests.dir/src/Type.cpp.o.d -o CMakeFiles/runtests.dir/src/Type.cpp.o -c /home/csmajs/asrin045/final-project-tuffyteam/src/Type.cpp
 
 CMakeFiles/runtests.dir/src/Type.cpp.i: cmake_force
@@ -241,6 +255,7 @@ CMakeFiles/runtests.dir/src/Type.cpp.s: cmake_force
 runtests_OBJECTS = \
 "CMakeFiles/runtests.dir/test/gameTest.cpp.o" \
 "CMakeFiles/runtests.dir/test/suspectTest.cpp.o" \
+"CMakeFiles/runtests.dir/test/locationTest.cpp.o" \
 "CMakeFiles/runtests.dir/src/Clue.cpp.o" \
 "CMakeFiles/runtests.dir/src/Game.cpp.o" \
 "CMakeFiles/runtests.dir/src/Locations/Bedroom.cpp.o" \
@@ -257,6 +272,7 @@ runtests_EXTERNAL_OBJECTS =
 
 runtests: CMakeFiles/runtests.dir/test/gameTest.cpp.o
 runtests: CMakeFiles/runtests.dir/test/suspectTest.cpp.o
+runtests: CMakeFiles/runtests.dir/test/locationTest.cpp.o
 runtests: CMakeFiles/runtests.dir/src/Clue.cpp.o
 runtests: CMakeFiles/runtests.dir/src/Game.cpp.o
 runtests: CMakeFiles/runtests.dir/src/Locations/Bedroom.cpp.o
@@ -272,7 +288,7 @@ runtests: lib/libgtest.a
 runtests: lib/libgtest_main.a
 runtests: lib/libgtest.a
 runtests: CMakeFiles/runtests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable runtests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/asrin045/final-project-tuffyteam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable runtests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runtests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
