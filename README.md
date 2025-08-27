@@ -129,6 +129,13 @@ This helped because new actions or rooms can be swapped in without changing the 
  
  ## Screenshots
  > Screenshots of the input/output after running your application
+> <img width="783" height="564" alt="Screenshot 2025-08-27 at 12 41 13 PM" src="https://github.com/user-attachments/assets/7b4e9a65-d958-4330-96c2-cfdfb26e2428" />
+<img width="513" height="453" alt="Screenshot 2025-08-27 at 12 41 37 PM" src="https://github.com/user-attachments/assets/8d5872b6-072d-4b58-97db-5e99ed416601" />
+<img width="658" height="572" alt="Screenshot 2025-08-27 at 12 41 54 PM" src="https://github.com/user-attachments/assets/e650dd81-f8be-4a42-b2bc-d468e4678899" />
+<img width="770" height="740" alt="Screenshot 2025-08-27 at 12 42 14 PM" src="https://github.com/user-attachments/assets/d424f995-443e-4c29-a227-f6c31e305161" />
+
+
+
  ## Installation/Usage
  > To run The Grimshire Manor, clone this GitHub repository on any Linux-based terminal with support for git and make. Then, use the following commands:
 >
