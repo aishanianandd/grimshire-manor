@@ -84,7 +84,7 @@ We developed this project in C++ using VSCode, with all gameplay taking place in
 
 >- Player must guess who the murderer is
 >- Game ends if the player guesses correctly or incorrectly
->- Player may also lose if they run out of time or turns
+>- Player may also lose if they run out of turns
 >
 >
 ---
