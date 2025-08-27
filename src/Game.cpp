@@ -218,7 +218,8 @@ void Game::TalkToSuspect(Suspect& suspect) {
 void Game::printSuspectIntroduction() {
     std::cout << "-----------------------------------" << endl;
     
-    static constexpr const char* POLICE = R"POLICE(
+    static constexpr const char* POLICE = "\033[34m"  // turn text blue
+    R"( 
                  ,
         __  _.-"` `'-.
        /||\'._ __{}_(
@@ -236,22 +237,23 @@ void Game::printSuspectIntroduction() {
 You arrive at the station where the main suspects await questioning.
 Interview anyone in any order. (Q to quit)
 
-)POLICE";
+)" 
+"\033[0m";
 
-    std::cout << POLICE << '\n';
+    std::cout << POLICE;
 
     bool interviewing = true;
     while (interviewing) {
-        std::cout << "Who would you like to interview?\n\n"
-                     "A) Lenora Grimshire (Wife)\n"
-                     "B) Jellal Vexley (Best Friend)\n"
-                     "C) Alexander Grimshire (Son)\n"
-                     "D) Celeste Grimshire (Daughter)\n"
-                     "E) Alfred Crane (Butler)\n"
-                     "F) Dante Vermillion (Chef)\n"
-                     "Q) Quit questioning\n"
+        std::cout << "\033[1mWho would you like to interview?\033[0m\n\n"
+                     "\033[1mA)\033[0m Lenora Grimshire (Wife)\n"
+                     "\033[1mB)\033[0m Jellal Vexley (Best Friend)\n"
+                     "\033[1mC)\033[0m Alexander Grimshire (Son)\n"
+                     "\033[1mD)\033[0m Celeste Grimshire (Daughter)\n"
+                     "\033[1mE)\033[0m Alfred Crane (Butler)\n"
+                     "\033[1mF)\033[0m Dante Vermillion (Chef)\n"
+                     "\033[1mQ)\033[0m Quit questioning\n"
                      << endl <<
-                     "Enter your choice: ";
+                     "\033[1mEnter your choice: \033[0m";
 
         std::string line;
         std::getline(std::cin, line);
