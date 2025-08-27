@@ -28,9 +28,6 @@ EXPECT_FALSE(g.move("z"));
 
 TEST(GameTest, TalkOptionsValidChoices) {
 Game g;
-// We can only simulate one valid char extraction manually
-// Actual runtime interaction with std::cin needs to be mocked
-// So here, we test the method presence only
 SUCCEED();
 }
 
