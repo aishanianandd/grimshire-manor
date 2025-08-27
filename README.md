@@ -4,18 +4,30 @@
  
  > Authors: [Ashita Srinivasmurthy](https://github.com/ashita-816), [Rian McCreery](https://github.com/hmccr001), [Aishani Anand](https://github.com/aishanianandd), [Kesia Fernandes](https://github.com/kcafernandes)
 
-> ## Project Description
- > ### Murder Mystery RPG – Text-Based Game
+## Project Description
+### Murder Mystery RPG – Text-Based Game
 
-A text-based role-playing game made in C++ where the player assumes the role of a detective solving a murder case through exploration and logical reasoning.
+Our project is a text-based murder mystery game set in Grimshire Manor, where the player takes on the role of a detective investigating the suspicious death of Damian Grimshire. The goal is to uncover the truth by interviewing suspects, exploring rooms, and piecing together clues to identify the killer.
+
+We developed this project in C++ using VSCode, with all gameplay taking place in the terminal. To create an atmosphere in the terminal, we use ASCII art and bold, italics, and color text effects. Players interact by typing input, choosing which suspects to interrogate, which rooms to investigate, and when to make their final accusation.
+
+### Features
+
+- Interactive suspect interviews with unique motives and alibis
+
+- ASCII art and styled text for an immersive experience
+
+- Multiple explorable locations with interactive NPCs
+
+- Collection of clues and statements to aid deduction
+
+- Accusation system that lets the player decide on the murderer
 
 ---
 
 ### Why is it important or interesting to us?
 
-> It’s fun to build and easy to demo since text-based means we can focus more on logic and systems instead of graphics.  
->
-> It also mixes storytelling with problem-solving where we can prioritize creativity in writing a compelling narrative, while also improving our software developing skills and gaining more experience.
+> We grew up enjoying mystery stories and detective games and this project gave us the chance to recreate that experience with our own style. By building it ourselves, we could focus on our narrative and on the mechanics of a standard murder mystery game. Our goal is to give players the thrill of solving a case in an interactive environment.
 
 ---
 
