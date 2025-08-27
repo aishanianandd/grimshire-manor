@@ -274,10 +274,10 @@ Interview anyone in any order. (Q to quit)
                 std::cout << "\033[1mSuspect:\033[0m Lenora Grimshire\n\n";
 
                 // appearance
-                type("\033[1mAppearance:\033[0m \033[3mAn elegant woman in her early 50s. She has smooth chestnut-brown hair\n"
+                type("\033[1mAppearance:\033[0m \033[3mAn elegant woman in her early 50s. She has chestnut-brown hair\n"
                     "\t    pinned up neatly with sparkling diamond clips. \n"
-                    "\t    Her blue silk gown matches her sharp green eyes, and she wears long satin gloves.\n"
-                    "\t    She moves gracefully, always with perfect posture.\033[0m\n\n", 5);
+                    "\t    Her blue silk gown matches her sharp blue eyes, and she wears long satin gloves.\n"
+                    "\033[0m\n\n", 5);
 
                 std::cout << "\033[1;36m"
                         << "================ INTERVIEW ================"
@@ -287,9 +287,8 @@ Interview anyone in any order. (Q to quit)
 
                 type("\033[1mLenora:\033[0m \033[3mAfter I’d greeted everyone and made my rounds in the ballroom,\n"
                     "\tI began to feel a bit lightheaded… too much champagne, perhaps. \n"
-                    "\tAround 1:30, I excused myself and went upstairs to my boudoir. \n"
-                    "\tI poured myself a glass of wine and settled in with my book..\n"
-                    "\tthe music from the ballroom was still faintly drifting up the stairs. \n"
+                    "\tAround 1:30, I went upstairs to my boudoir. \n"
+                    "\tI poured myself a glass of wine and began reading my book..\n"
                     "\tI must have dozed off sometime near 2:45. \n"
                     "\tThe next thing I remember was waking to shouting in the hall… \n"
                     "\tit was all so sudden and dreadful.\033[0m\n\n", 15);
@@ -297,7 +296,7 @@ Interview anyone in any order. (Q to quit)
                 type("\033[1;34mDetective:\033[0m \033[3mDid you and Damian argue that night?\033[0m\n\n", 5);
 
                 type("\033[1mLenora:\033[0m \033[3mYes… but only briefly, about his… behavior. \n"
-                    "\tStill, I would never harm him. He had many enemies, Detective.\033[0m\n\n", 5);
+                    "\tStill, I would never harm him. He's my husband.\033[0m\n\n", 5);
 
                 std::cout << "\033[1;31m"   // bold red
                     << "============= INTERVIEW END ============="
@@ -318,7 +317,7 @@ Interview anyone in any order. (Q to quit)
                     "A charming man in his mid-40s with tanned skin, dark eyes, "
                     "\n\t   and black hair streaked with blue highlights.\n"
                     "\t   He wears a maroon tuxedo with shiny gold cufflinks."
-                    "\n\t   His smile is warm, but his eyes look calculating.\033[0m\n\n",
+                    "\033[0m\n\n",
                     5);
 
                 // interview header (cyan)
@@ -331,16 +330,11 @@ Interview anyone in any order. (Q to quit)
 
                 // A1 (full alibi, italic body)
                 type("\033[1mJellal:\033[0m \033[3mAh yes, I was in the library lounge most of the night. \n"
-                    "\tYou know me once I start telling my travel stories, people tend to linger. "
-                    "\n\tWe had quite a lively crowd at first, "
-                    "\n\tbut by about 2:15 they’d all wandered off to the ballroom for a dance. "
-                    "\n\tI stayed behind, poured myself another brandy, "
-                    "\n\tand settled by the fire to review some papers. "
                     "\n\tAlfred popped in around 2:40 with a fresh stack of stationery. "
-                    "\n\tTruth be told, I was glad for the quiet… "
+                    "\n\tTruth be told, I don't fancy parties, I'm just attending for my wife "
                     "\n\tDamian had been particularly charming with the ladies tonight, as he tends to be. "
-                    "\n\tSometimes I think he forgets who his friends are. "
-                    "\n\tStill, I didn’t move from that chair until I heard the commotion.\033[0m\n\n",
+                    "\n\tSometimes I question his motives. "
+                    "\n\tAnyways, I didn’t move from the library until I heard the commotion.\033[0m\n\n",
                     5);
 
                 // Q2 (motive probe)
@@ -377,9 +371,10 @@ Interview anyone in any order. (Q to quit)
 
                 // appearance
                 type("\033[1mAppearance:\033[0m "
-                    "A tall, broad-shouldered 28-year-old with dark brown hair neatly styled. "
-                    "He wears a navy suit with a crisp white shirt and a matching tie, though it’s slightly loosened as if he’s restless. "
-                    "He often scans the room like he’s thinking two steps ahead.\033[0m\n\n",
+                    "A tall, broad-shouldered 28-year-old with dark brown hair. "
+                    "\n\t   He wears a navy suit with a matching tie, "
+                    "\n\t   though it’s slightly loosened as if he’s restless. "
+                    "\033[0m\n\n",
                     5);
 
                 // interview header
@@ -391,17 +386,20 @@ Interview anyone in any order. (Q to quit)
                 type("\033[1;34mDetective:\033[0m \033[3mMr. Grimshire, where were you last night?\033[0m\n\n", 5);
 
                 // A1 (his business call alibi)
-                type("\033[1mAlexander:\033[0m \033[3mJust before two o’clock, I stepped out of the ballroom — there was a confidential business matter that couldn’t wait. "
-                    "I took the call in the upstairs office where it was quieter. "
-                    "The conversation… well, it was delicate, and I needed privacy.\033[0m\n\n",
+                type("\033[1mAlexander:\033[0m \033[3mJust before two o’clock, I stepped out of the ballroom — "
+                    "\n\t   there was a confidential business matter that couldn’t wait. "
+                    "\n\t   I took the call in the upstairs office where it was quieter. "
+                    "\n\t   The conversation… well, it was delicate, and I needed privacy.\033[0m\n\n",
                     5);
 
                 // Q2 (motive probe)
                 type("\033[1;34mDetective:\033[0m \033[3mDamian’s name came up during that call?\033[0m\n\n", 5);
 
                 // A2
-                type("\033[1mAlexander:\033[0m \033[3mYes. Damian’s name came up more than once — certain investors are still furious about how he handled a recent deal, "
-                    "and I was left cleaning up his mess. I can’t say I wasn’t frustrated; he’s cost me opportunities before.\033[0m\n\n",
+                type("\033[1mAlexander:\033[0m \033[3mYes. Damian’s name came up more than once — "
+                    "\n\t   certain investors are still furious about how he handled a recent deal, "
+                    "\n\t   and I was left cleaning up his mess. "
+                    "\n\t   I can’t say I wasn’t frustrated, since he’s cost me opportunities before.\033[0m\n\n",
                     5);
 
                 // Q3 (timeline clarification)
@@ -409,8 +407,8 @@ Interview anyone in any order. (Q to quit)
 
                 // A3
                 type("\033[1mAlexander:\033[0m \033[3mAs far as I recall, the call went on right up until three o’clock. "
-                    "I’d barely hung up when I heard the crash — glass shattering, voices shouting. "
-                    "I left the office straightaway and found the whole place in chaos.\033[0m\n\n",
+                    "\n\t   I’d barely hung up when I heard the crash — glass shattering, voices shouting. "
+                    "\n\t   I left the office straightaway and found the whole place in chaos.\033[0m\n\n",
                     5);
 
                 // end banner
@@ -430,9 +428,9 @@ Interview anyone in any order. (Q to quit)
 
                 // appearance
                 type("\033[1mAppearance:\033[0m "
-                    "A beautiful 22-year-old with wavy brown hair over one shoulder. "
-                    "She has pale skin, bright green eyes, and wears a light blue silk dress with a high slit. "
-                    "She laughs easily, but her eyes hint at stubbornness and rebellion.\033[0m\n\n",
+                    "A beautiful 22-year-old woman with wavy brown hair over one shoulder. "
+                    "\n\t    She has pale skin, bright green eyes, and wears a light blue silk dress with a high slit. "
+                    "\033[0m\n\n",
                     5);
 
                 // interview header (cyan)
@@ -444,18 +442,19 @@ Interview anyone in any order. (Q to quit)
                 type("\033[1;34mDetective:\033[0m \033[3mMiss Grimshire, where were you last night?\033[0m\n\n", 5);
 
                 // A1 (her ballroom/kitchen alibi)
-                type("\033[1mCeleste:\033[0m \033[3mThe ballroom? Please… you know I can only take so much of those tedious society types. "
-                    "I slipped into the kitchen not long after dinner and found Dante there — we ended up talking about a new pastry recipe he’s been working on. "
-                    "It was far more interesting than watching half-drunk men stumble through a waltz.\033[0m\n\n",
+                type("\033[1mCeleste:\033[0m \033[3mHonestly, I had left the ballroom quite early."
+                    "\n\t I had entered the kitchen not long after dinner and found Dante there "
+                    "\n\t and we ended up talking about a new pastry recipe he’s been working on. "
+                    "\n\t It was far more interesting than watching half-drunk men stumble through a waltz.\033[0m\n\n",
                     5);
 
                 // Q2
                 type("\033[1;34mDetective:\033[0m \033[3mAnd how long did you stay in the kitchen?\033[0m\n\n", 5);
 
                 // A2
-                type("\033[1mCeleste:\033[0m \033[3mWe just chatted, sipped some tea… oh, I think I left the kitchen a little before three to fetch my shawl. "
-                    "I’d barely gotten back to my room when I heard the shouting. "
-                    "It was all such a blur after that.\033[0m\n\n",
+                type("\033[1mCeleste:\033[0m \033[3moh, I think I left the kitchen a little before three to fetch my shawl. "
+                    "\n\t I’d barely gotten back to my room when I heard the shouting. "
+                    "\n\t It was all such a blur after that.\033[0m\n\n",
                     5);
 
                 // end banner
@@ -476,8 +475,8 @@ Interview anyone in any order. (Q to quit)
                 // appearance
                 type("\033[1mAppearance:\033[0m "
                     "A neat and serious man in his late 60s with silver hair and sharp grey eyes. "
-                    "He wears a perfect black butler’s uniform with polished brass buttons and a gold watch chain. "
-                    "He moves quietly and with purpose.\033[0m\n\n",
+                    "\n\t    He wears a black butler’s uniform with brass buttons and a gold watch chain. "
+                    "\033[0m\n\n",
                     5);
 
                 // interview header
@@ -489,23 +488,27 @@ Interview anyone in any order. (Q to quit)
                 type("\033[1;34mDetective:\033[0m \033[3mMr. Crane, could you tell me where you were during the evening?\033[0m\n\n", 5);
 
                 // A1 (alibi part 1)
-                type("\033[1mAlfred:\033[0m \033[3mI was on my feet all evening, as you’d expect — making the rounds between the dining room and ballroom, "
-                    "keeping glasses topped up and seeing to the guests’ coats.\033[0m\n\n",
+                type("\033[1mAlfred:\033[0m \033[3mI was on my feet all evening, as you’d expect,"
+                    "\n\t making the rounds between the dining room and ballroom, "
+                    "\033[0m\n\n",
                     5);
 
                 // Q2
                 type("\033[1;34mDetective:\033[0m \033[3mWhat were you doing around midnight?\033[0m\n\n", 5);
 
                 // A2
-                type("\033[1mAlfred:\033[0m \033[3mAround 12:00, once things had settled into their rhythm, I began polishing the silver in the dining room between service rounds.\033[0m\n\n",
+                type("\033[1mAlfred:\033[0m \033[3mAround 12:00, once things had settled down, "
+                    "\n\t I began polishing the silver in the dining room between service rounds.\033[0m\n\n",
                     5);
 
                 // Q3
                 type("\033[1;34mDetective:\033[0m \033[3mAnd just before the incident?\033[0m\n\n", 5);
 
                 // A3 (final timeline detail)
-                type("\033[1mAlfred:\033[0m \033[3mBy the time the clock was nearing 3:00, I’d moved on to arranging flowers in the foyer for the morning. "
-                    "That’s when I heard it — the crash, the shouting. I went straight to see what had happened.\033[0m\n\n",
+                type("\033[1mAlfred:\033[0m \033[3mBy the time the clock was nearing 3:00, "
+                    "\n\t I’d moved on to arranging flowers in the foyer for the morning. "
+                    "\n\t That’s when I heard it, the crash and the shouting. "
+                    "\n\t I went straight to see what had happened.\033[0m\n\n",
                     5);
 
                 // end banner
@@ -525,9 +528,9 @@ Interview anyone in any order. (Q to quit)
 
                 // appearance
                 type("\033[1mAppearance:\033[0m "
-                    "An Italian man in his early 30s with olive-toned skin, brown eyes, and dark hair swept back. "
-                    "He wears spotless white chef’s clothes and a small silver necklace with a Van Cleef charm. "
-                    "His hands are strong and a little scarred from years of cooking.\033[0m\n\n",
+                    "An Italian man in his early 30s with olive-toned skin, brown eyes, and dark hair. "
+                    "\n\t  He wears a white apron with a small silver necklace. "
+                    "\n\t  His hands are strong and a little scarred from years of cooking.\033[0m\n\n",
                     5);
 
                 // interview header
@@ -539,23 +542,25 @@ Interview anyone in any order. (Q to quit)
                 type("\033[1;34mDetective:\033[0m \033[3mChef Vermillion, where were you during the evening?\033[0m\n\n", 5);
 
                 // A1
-                type("\033[1mDante:\033[0m \033[3mI was in the kitchen for most of the night — plenty to do after the gala supper. "
-                    "Celeste joined me for a bit; we shared tea and talked about some new recipes I’d been working on.\033[0m\n\n",
+                type("\033[1mDante:\033[0m \033[3mI was in the kitchen for most of the night — "
+                    "\n\tCeleste joined me for a bit;"
+                    "\n\twe shared tea and talked about some new recipes I’d been working on.\033[0m\n\n",
                     5);
 
                 // Q2
                 type("\033[1;34mDetective:\033[0m \033[3mWhen did Celeste leave?\033[0m\n\n", 5);
 
                 // A2
-                type("\033[1mDante:\033[0m \033[3mShe left a little before three o’clock, and I stayed behind to tidy up. "
-                    "I put away the silver, wiped the counters, made sure everything was ready for breakfast.\033[0m\n\n",
+                type("\033[1mDante:\033[0m \033[3mShe left a little before three o’clock, and I stayed behind to tidy up. \n"
+                    "\033[0m\n\n",
                     5);
 
                 // Q3
                 type("\033[1;34mDetective:\033[0m \033[3mAnd when did you leave the kitchen?\033[0m\n\n", 5);
 
                 // A3
-                type("\033[1mDante:\033[0m \033[3mI didn’t step out until I went to my quarters, just before the shouting started.\033[0m\n\n",
+                type("\033[1mDante:\033[0m \033[3mI didn’t step out until I went to my quarters, "
+                    "\n\tit was just before the shouting started.\033[0m\n\n",
                     5);
 
                 // end banner
@@ -569,6 +574,10 @@ Interview anyone in any order. (Q to quit)
                 cout << "You wrap up the questioning for now. ب_ب\n\n";
                 cout << endl;
                 cout << "--------------------------------------------" << endl;
+                cout << endl;
+                cout << endl;
+                type("\033[3mThe questioning is complete. Now it’s up to you, Detective."
+                    "\nSearch the manor, examine the evidence, and uncover the truth.\033[0m");
                 interviewing = false;
                 break;
 
