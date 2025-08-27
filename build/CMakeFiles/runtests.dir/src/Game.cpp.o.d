@@ -118,9 +118,7 @@ CMakeFiles/runtests.dir/src/Game.cpp.o: \
  /usr/include/c++/8/bits/stl_relops.h \
  /usr/include/c++/8/bits/stl_vector.h \
  /usr/include/c++/8/bits/stl_bvector.h /usr/include/c++/8/bits/vector.tcc \
- /home/csmajs/asrin045/final-project-tuffyteam/include/Character.h \
  /home/csmajs/asrin045/final-project-tuffyteam/include/Clue.h \
  /home/csmajs/asrin045/final-project-tuffyteam/include/Location.h \
- /home/csmajs/asrin045/final-project-tuffyteam/include/Suspect.h \
  /home/csmajs/asrin045/final-project-tuffyteam/include/Suspect.h \
  /home/csmajs/asrin045/final-project-tuffyteam/include/Type.h

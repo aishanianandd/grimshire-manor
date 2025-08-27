@@ -136,8 +136,6 @@ CMakeFiles/game.dir/src/main.cpp.o: \
  /home/csmajs/asrin045/final-project-tuffyteam/include/Game.h \
  /usr/include/c++/8/vector /usr/include/c++/8/bits/stl_vector.h \
  /usr/include/c++/8/bits/stl_bvector.h /usr/include/c++/8/bits/vector.tcc \
- /home/csmajs/asrin045/final-project-tuffyteam/include/Character.h \
  /home/csmajs/asrin045/final-project-tuffyteam/include/Clue.h \
  /home/csmajs/asrin045/final-project-tuffyteam/include/Location.h \
- /home/csmajs/asrin045/final-project-tuffyteam/include/Suspect.h \
  /home/csmajs/asrin045/final-project-tuffyteam/include/Suspect.h
