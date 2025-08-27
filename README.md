@@ -63,8 +63,8 @@ We developed this project in C++ using VSCode, with all gameplay taking place in
 >- Each location includes interactive NPCs, clues, and items
   
 
-#### Characters:
->- Each NPC (non-player character) has a name, role, alibi, and dialogue options
+#### Suspects:
+>- Each Suspect has a name, role, alibi, and dialogue options
   
 
 #### Clues:
@@ -74,7 +74,7 @@ We developed this project in C++ using VSCode, with all gameplay taking place in
 #### Actions Available to the Player
 
 >- **Investigate** the current location for clues
->- **Talk** to NPCs using multiple dialogue options
+>- **Talk** to Suspects using multiple dialogue options
 >- **Move** to a different location
 >- **Analyze** the collected clues and suspect info
 >- **Accuse** a suspect
