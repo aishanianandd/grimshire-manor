@@ -1,4 +1,4 @@
-#include "Location.h"
+#include "Locations/Kitchen.h"
 
 Kitchen::Kitchen()
 : Location(

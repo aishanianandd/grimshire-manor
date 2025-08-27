@@ -1,4 +1,4 @@
-#include "Location.h"
+#include "Locations/Bedroom.h"
 
 Bedroom::Bedroom() : Location(
     "Bedroom",

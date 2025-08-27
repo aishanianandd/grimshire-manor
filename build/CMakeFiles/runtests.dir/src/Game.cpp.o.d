@@ -121,4 +121,9 @@ CMakeFiles/runtests.dir/src/Game.cpp.o: \
  /home/csmajs/asrin045/final-project-tuffyteam/include/Clue.h \
  /home/csmajs/asrin045/final-project-tuffyteam/include/Location.h \
  /home/csmajs/asrin045/final-project-tuffyteam/include/Suspect.h \
- /home/csmajs/asrin045/final-project-tuffyteam/include/Type.h
+ /home/csmajs/asrin045/final-project-tuffyteam/include/Type.h \
+ /home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Foyer.h \
+ /home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Bedroom.h \
+ /home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Kitchen.h \
+ /home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Office.h \
+ /home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Library.h

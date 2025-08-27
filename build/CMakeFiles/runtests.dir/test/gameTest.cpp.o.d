@@ -214,4 +214,6 @@ CMakeFiles/runtests.dir/test/gameTest.cpp.o: \
  /home/csmajs/asrin045/final-project-tuffyteam/include/Game.h \
  /home/csmajs/asrin045/final-project-tuffyteam/include/Clue.h \
  /home/csmajs/asrin045/final-project-tuffyteam/include/Location.h \
- /home/csmajs/asrin045/final-project-tuffyteam/include/Suspect.h
+ /home/csmajs/asrin045/final-project-tuffyteam/include/Suspect.h \
+ /home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Bedroom.h \
+ /home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Foyer.h

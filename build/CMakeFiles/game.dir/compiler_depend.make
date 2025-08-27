@@ -353,10 +353,16 @@ CMakeFiles/game.dir/src/Game.cpp.o: /home/csmajs/asrin045/final-project-tuffytea
   /home/csmajs/asrin045/final-project-tuffyteam/include/Clue.h \
   /home/csmajs/asrin045/final-project-tuffyteam/include/Location.h \
   /home/csmajs/asrin045/final-project-tuffyteam/include/Suspect.h \
-  /home/csmajs/asrin045/final-project-tuffyteam/include/Type.h
+  /home/csmajs/asrin045/final-project-tuffyteam/include/Type.h \
+  /home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Foyer.h \
+  /home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Bedroom.h \
+  /home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Kitchen.h \
+  /home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Office.h \
+  /home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Library.h
 
 CMakeFiles/game.dir/src/Locations/Bedroom.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Bedroom.cpp \
   /usr/include/stdc-predef.h \
+  /home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Bedroom.h \
   /home/csmajs/asrin045/final-project-tuffyteam/include/Location.h \
   /usr/include/c++/8/string \
   /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
@@ -512,6 +518,7 @@ CMakeFiles/game.dir/src/Locations/Bedroom.cpp.o: /home/csmajs/asrin045/final-pro
 
 CMakeFiles/game.dir/src/Locations/Foyer.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Foyer.cpp \
   /usr/include/stdc-predef.h \
+  /home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Foyer.h \
   /home/csmajs/asrin045/final-project-tuffyteam/include/Location.h \
   /usr/include/c++/8/string \
   /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
@@ -667,6 +674,7 @@ CMakeFiles/game.dir/src/Locations/Foyer.cpp.o: /home/csmajs/asrin045/final-proje
 
 CMakeFiles/game.dir/src/Locations/Kitchen.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Kitchen.cpp \
   /usr/include/stdc-predef.h \
+  /home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Kitchen.h \
   /home/csmajs/asrin045/final-project-tuffyteam/include/Location.h \
   /usr/include/c++/8/string \
   /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
@@ -822,6 +830,7 @@ CMakeFiles/game.dir/src/Locations/Kitchen.cpp.o: /home/csmajs/asrin045/final-pro
 
 CMakeFiles/game.dir/src/Locations/Library.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Library.cpp \
   /usr/include/stdc-predef.h \
+  /home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Library.h \
   /home/csmajs/asrin045/final-project-tuffyteam/include/Location.h \
   /usr/include/c++/8/string \
   /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
@@ -1156,6 +1165,7 @@ CMakeFiles/game.dir/src/Locations/Location.cpp.o: /home/csmajs/asrin045/final-pr
 
 CMakeFiles/game.dir/src/Locations/Office.cpp.o: /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Office.cpp \
   /usr/include/stdc-predef.h \
+  /home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Office.h \
   /home/csmajs/asrin045/final-project-tuffyteam/include/Location.h \
   /usr/include/c++/8/string \
   /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
@@ -1917,6 +1927,10 @@ CMakeFiles/game.dir/src/main.cpp.o: /home/csmajs/asrin045/final-project-tuffytea
 
 /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Kitchen.cpp:
 
+/home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Library.h:
+
+/home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Office.h:
+
 /home/csmajs/asrin045/final-project-tuffyteam/include/Type.h:
 
 /home/csmajs/asrin045/final-project-tuffyteam/include/Suspect.h:
@@ -1973,6 +1987,8 @@ CMakeFiles/game.dir/src/main.cpp.o: /home/csmajs/asrin045/final-project-tuffytea
 
 /usr/include/c++/8/bits/allocator.h:
 
+/home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Bedroom.h:
+
 /usr/include/bits/types/timer_t.h:
 
 /usr/include/c++/8/bits/invoke.h:
@@ -1982,6 +1998,8 @@ CMakeFiles/game.dir/src/main.cpp.o: /home/csmajs/asrin045/final-project-tuffytea
 /usr/include/stdlib.h:
 
 /usr/include/endian.h:
+
+/home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Kitchen.h:
 
 /usr/include/bits/types.h:
 
@@ -2076,6 +2094,8 @@ CMakeFiles/game.dir/src/main.cpp.o: /home/csmajs/asrin045/final-project-tuffytea
 /usr/include/wchar.h:
 
 /usr/include/bits/sched.h:
+
+/home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Foyer.h:
 
 /usr/include/stdc-predef.h:
 

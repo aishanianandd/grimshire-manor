@@ -1,6 +1,7 @@
 CMakeFiles/runtests.dir/src/Locations/Kitchen.cpp.o: \
  /home/csmajs/asrin045/final-project-tuffyteam/src/Locations/Kitchen.cpp \
  /usr/include/stdc-predef.h \
+ /home/csmajs/asrin045/final-project-tuffyteam/include/Locations/Kitchen.h \
  /home/csmajs/asrin045/final-project-tuffyteam/include/Location.h \
  /usr/include/c++/8/string \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \

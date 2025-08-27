@@ -1,4 +1,4 @@
-#include "Location.h"
+#include "Locations/Foyer.h"
 
 Foyer::Foyer()
 : Location(

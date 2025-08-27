@@ -1,4 +1,4 @@
-#include "Location.h"
+#include "Locations/Office.h"
 
 Office::Office()
 : Location(

@@ -17,9 +17,3 @@ class Location {
     void showLocationOptions();
     void interact();
 };
-
-class Foyer : public Location { public: Foyer(); };
-class Library : public Location { public: Library(); };
-class Office  : public Location { public: Office(); };
-class Kitchen : public Location { public: Kitchen(); };
-class Bedroom : public Location { public: Bedroom(); };

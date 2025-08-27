@@ -3,6 +3,11 @@
 #include "Game.h"
 #include "Suspect.h"
 #include "Type.h"
+#include "Locations/Foyer.h"
+#include "Locations/Bedroom.h"
+#include "Locations/Kitchen.h"
+#include "Locations/Office.h"
+#include "Locations/Library.h"
 
 using std::cout;
 using std::endl;

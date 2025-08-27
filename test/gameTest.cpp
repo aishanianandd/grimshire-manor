@@ -1,16 +1,8 @@
 #include <gtest/gtest.h>
 #include "Game.h"
 #include "Suspect.h"
-/*#include "Bedroom.h"
-#include "Foyer.h" */
-
-// Mock subclass of Location for safe interaction testing
-/*class DummyLocation : public Location {
-public:
-DummyLocation() : Location("Dummy Room", "A placeholder.") {}
-void interact() override {} // no-op
-void showLocationOptions() override {} // no-op
-};*/
+#include "Locations/Bedroom.h"
+#include "Locations/Foyer.h"
 
 TEST(GameTests, SetAndGetName) {
     Game g;
@@ -24,7 +16,7 @@ Game g;
 EXPECT_TRUE(g.move("b"));
 }
 
-/*TEST(GameTest, MoveToFoyer) {
+TEST(GameTest, MoveToFoyer) {
 Game g;
 EXPECT_TRUE(g.move("a"));
 }
@@ -32,7 +24,7 @@ EXPECT_TRUE(g.move("a"));
 TEST(GameTest, InvalidMoveReturnsFalse) {
 Game g;
 EXPECT_FALSE(g.move("z"));
-} */
+}
 
 TEST(GameTest, TalkOptionsValidChoices) {
 Game g;
