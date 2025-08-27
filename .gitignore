@@ -4,5 +4,8 @@
 # executables
 /game
 /main
+/runtests
 
-/build
+/build/
+/Makefile
+/google/test
