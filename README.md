@@ -133,6 +133,10 @@ This helped because new actions or rooms can be swapped in without changing the 
 <img width="513" height="453" alt="Screenshot 2025-08-27 at 12 41 37 PM" src="https://github.com/user-attachments/assets/8d5872b6-072d-4b58-97db-5e99ed416601" />
 <img width="658" height="572" alt="Screenshot 2025-08-27 at 12 41 54 PM" src="https://github.com/user-attachments/assets/e650dd81-f8be-4a42-b2bc-d468e4678899" />
 <img width="770" height="740" alt="Screenshot 2025-08-27 at 12 42 14 PM" src="https://github.com/user-attachments/assets/d424f995-443e-4c29-a227-f6c31e305161" />
+<img width="800" height="167" alt="Screenshot 2025-08-27 at 12 46 15 PM" src="https://github.com/user-attachments/assets/2f7925cd-ce0e-4571-a81a-950af345abf2" />
+<img width="779" height="339" alt="Screenshot 2025-08-27 at 12 46 39 PM" src="https://github.com/user-attachments/assets/5812f0a0-520e-49c4-8557-09d3ec4060a0" />
+<img width="324" height="304" alt="Screenshot 2025-08-27 at 12 47 16 PM" src="https://github.com/user-attachments/assets/52769913-7f89-41d9-8f62-d963cef2c586" />
+<img width="322" height="86" alt="Screenshot 2025-08-27 at 12 47 27 PM" src="https://github.com/user-attachments/assets/7bfbff0c-eaa9-48d6-80f5-d9a89f1ede2c" />
 
 
 
