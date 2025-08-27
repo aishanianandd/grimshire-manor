@@ -22,6 +22,7 @@ class Game {
 
     public:
         ~Game();
+        
         // game flow
         void printIntroduction();
         bool move(const std::string& choice);     // choose a room and interact

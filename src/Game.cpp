@@ -28,9 +28,9 @@ void Game::printIntroduction() {
     type("Once a family of elegance and renown, their halls echoed with laughter, music, and champagne.\n\n");
 
     type("...but all that grandeur has been tainted.\n");
-    type("Last night, tragedy struck.\n");
+    type("Last night, tragedy struck.\n\n");
     type("Damian Grimshire, the head of the family and host of the party, was discovered lifeless at the bottom of the grand staircase.\n");  
-    type("The official word? A drunken stumble, a fatal fall down the staricase at precisely 3:17 AM.\n\n");
+    type("The official word? A drunken stumble, a fatal fall down the staricase at precisely 3:17 AM.\n");
     const char* DUDE = 
     R"DUDE(
        ○ 
@@ -43,19 +43,19 @@ void Game::printIntroduction() {
     )DUDE";
     std::cout << DUDE << std::endl;
 
-    type("But you should know… nothing in this manor can ever be that simple.\n");
-    type("You have been chosen as the lead detective in this case.\n");
+    type("But you should know… nothing in this manor can ever be that simple.\n\n");
+    type("\033[1mYou have been chosen as the lead detective in this case.\033[0m\n");
     type("The lives, the lies, the legacy of the Grimshires now rest in your hands.\n\n");
 
     type("Tell me, detective… are you ready to face what awaits in the dark?\033[0m\n\n");
 
 
     std::cout << "\033[38;2;255;0;0m";
-    std::cout << "|═════════════════════⊹⊱≼≽⊰⊹═════════════════════|\n";
+    std::cout << "|═════════════════════════════⊹⊱≼≽⊰⊹═════════════════════════════|\n";
     std::cout << endl;
-    std::cout << "            THE GRIMSHIRE MANOR MURDER            \n";
+    std::cout << "                   THE GRIMSHIRE MANOR MURDER                     \n";
     std::cout << endl;
-    std::cout << "|═════════════════════⊹⊱≼≽⊰⊹═════════════════════|\n";
+    std::cout << "|═════════════════════════════⊹⊱≼≽⊰⊹═════════════════════════════|\n";
     std::cout << "\033[0m";  // reset
     std::cout << std::endl;
 
